@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer id="rs-footer" class="bg3 rs-footer" style="background-image: url(https://diu.ac/front/images/bg/counter-bg.jpg">
+    <div class="footer-bg">
     <div class="container">
         
     </div>
@@ -92,10 +92,18 @@
             </div>
         </div>
     </div>
-</footer>
+</div>
   </div>
 </template>
 <style scoped>
+.footer-bg{
+  padding: 3%;
+  background-image:url("/images/footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 .about-widget p{
     color: #fff;
     font-size: 15px;

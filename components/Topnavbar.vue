@@ -35,7 +35,7 @@
       </div>
     </div>
     
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container ">               
                 <button
                     class="navbar-toggler"

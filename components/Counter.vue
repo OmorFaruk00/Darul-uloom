@@ -1,29 +1,29 @@
 <template>
-    <div class="p-5">
+    <div class="counter-bg">
         <div class="container">
             <h2 class="title pb-5">CURRENT STATISTICS: OUR STRENGTH</h2>
     <div class="row">
         <div class="col-md-3 col-sm-6">
             <div class="counter">
-                <span class="counter-value">0</span>
+                <span class="counter-value">100</span>                
                 <h3>CURRENT STUDENT</h3>
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="counter purple">
-                <span class="counter-value">0</span>
+                <span class="counter-value">50</span>
                 <h3>TEACHER</h3>
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="counter red">
-                <span class="counter-value">0</span>
+                <span class="counter-value">400</span>
                 <h3>NUMBER OF ALUMNI</h3>
             </div>
         </div>
         <div class="col-md-3 col-sm-6">
             <div class="counter gray">
-                <span class="counter-value">0</span>
+                <span class="counter-value">200</span>
                 <h3>TEACHER</h3>
             </div>
         </div>
@@ -35,6 +35,10 @@
     </div>
 </template>
 <style scoped>
+.counter-bg{
+    padding: 4%;
+    background: #f6f6f6;
+}
 .counter{
     color: #333;
     font-family: 'Poppins', sans-serif;
