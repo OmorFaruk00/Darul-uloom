@@ -9,105 +9,71 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-xl-6">
-          <h2 class="font-weight-bolder pb-2">OUR LATEST NOTICE</h2>
-          <div class="card p-3">
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-          </div>
+        <div class="col-sm-12 col-md-6 col-xl-6" v-if="notices">
+        <h2 class="font-weight-bolder  pb-2">OUR LATEST EVENTS</h2>
+        <div class="notice-body p-3" >
+          <div class="p-2 d-flex" v-for="notice in notices" :key="notice.id">
+            <h6 class="notice-date">{{notice.published_date}}</h6>
+            <h6 class="notice-title">{{notice.title}}</h6>
+          </div>                
+         
         </div>
-        <div class="col-sm-12 col-md-6 col-xl-6">
-          <h2 class="font-weight-bolder pb-2">OUR LATEST EVENTS</h2>
-          <div class="card p-3">
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
-            <div class="p-2 d-flex">
-              <h6 class="notice-date">20 / Apr / 22</h6>
-              <h6 class="notice-title">
-                ঈদ উল ফিতরের ছুটি সংক্রান্ত বিজ্ঞপ্তি
-              </h6>
-            </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-6" v-if="events">
+        <h2 class="font-weight-bolder  pb-2">OUR LATEST EVENTS</h2>
+        <div class="notice-body p-3" >
+          <div class="p-2 d-flex" v-for="event in events" :key="event.id">
+            <h6 class="notice-date">{{event.published_date}}</h6>
+            <h6 class="notice-title">{{event.title}}</h6>
           </div>
+                
+          
         </div>
       </div>
     </div>
+    </div>
   </div>
 </template>
+<script>
+export default{
+  data(){
+    return{
+      notices:[],
+      events:[],
+    }
+  },
+  mounted(){
+    this.getNotice();
+    this.getEvent();
+  },
+   methods: {
+     getNotice() {
+      this.$axios.$get("/notice")
+        .then((res) => {          
+          this.notices = res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+      getEvent() {
+      this.$axios.$get("/event")
+        .then((res) => {         
+          this.events = res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
+}
+</script>
 <style scoped>
+.notice-body{
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   background: #fff;
+   border-radius: 5px;
+ }
 .notice {
   background: linear-gradient(
       to bottom,
@@ -120,18 +86,8 @@
   background-position: bottom;
   margin-bottom: 80px;
 }
-.notice h2 {
-  text-align: center;
-  padding-top: 40px;
-  font-size: 45px;
-  color: #fff;
-}
-.notice p {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 18px;
-  color: #fff;
-}
+
+
 .notice-page {
   padding-bottom: 80px;
   /* background: rgb(238, 233, 233); */

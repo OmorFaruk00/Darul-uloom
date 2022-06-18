@@ -20,7 +20,7 @@ export default {
       {rel: 'stylesheet', href: '/css/icons.min.css'},
       // {rel: 'stylesheet', href: '/css/app.min.css'},
       // {rel: 'stylesheet', href: '/css/app.css'},
-      {rel: 'stylesheet', href: '/bootstrap-select/dist/css/bootstrap-select.min.css'},
+      // {rel: 'stylesheet', href: '/bootstrap-select/dist/css/bootstrap-select.min.css'},
       // {rel: 'stylesheet', href: '/css/style.css'},
       // {rel: 'stylesheet', href: '/css/style.min.css'},
       // {rel: 'stylesheet', href: '/css/responsive.css'},
@@ -31,13 +31,13 @@ export default {
       {src: '/libs/jquery/jquery.min.js', defer: true},
       {src: '/libs/bootstrap/js/bootstrap.bundle.min.js', defer: true},
       // {src: '/js/facebook.js'},
-      {src: '/bootstrap-select/dist/js/bootstrap-select.min.js', defer: true},
+      // {src: '/bootstrap-select/dist/js/bootstrap-select.min.js', defer: true},
       {src: '/libs/metismenu/metisMenu.min.js', defer: true},
       {src: '/libs/simplebar/simplebar.min.js', defer: true},
       // {src: '/libs/node-waves/waves.min.js'},
       // {src: '/js/pages/dashboard.init.js'},
-      {src: '/js/app.js', defer: true},
-      {src: '/js/main.js', defer: true},
+      // {src: '/js/app.js', defer: true},
+      // {src: '/js/main.js', defer: true},
     ],
   },
 
@@ -73,11 +73,15 @@ export default {
     }
    
   },
+  axios: {   
+    baseURL: 'http://localhost:8000/api',
+    credentials: true
+  },
 
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
+    '@nuxtjs/axios',
     'bootstrap-vue/nuxt'
   ],
 
