@@ -1,11 +1,7 @@
 <template>
   <div class="contact-page">
     <div class="contact">
-      <h2 class="title">Contact Us</h2>
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-        cumque!
-      </p>
+      <h2 class="title">Contact Us</h2>     
     </div>
     <div class="container"> 
         <div class="pb-5 d-flex justify-content-center">
@@ -40,33 +36,73 @@
                     <div class="form-icon">
                         <i class="fa fa-envelope-open"></i>
                     </div>
-                    <form class="form-horizontal">
+                    <div class="form-horizontal">
                         <h3 class="form-title">Contact Us</h3>
                         <div class="form-group">
                             <span class="input-icon"><i class="fa fa-user"></i></span>
-                            <input class="form-control" type="text" placeholder="Name">
+                            <input class="form-control" type="text" placeholder="Name" v-model="contact.name">
+                            <h6 v-if="error.name" v-text="error.name[0]" class="text-danger"></h6>
                         </div>
                         <div class="form-group">
                             <span class="input-icon"><i class="fa fa-book"></i></span>
-                            <input class="form-control" type="text" placeholder="Subject">
+                            <input class="form-control" type="text" placeholder="Subject" v-model="contact.subject">
+                            <h6 v-if="error.subject" v-text="error.subject[0]" class="text-danger"></h6>
                         </div>
                         <div class="form-group">
                             <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                            <input class="form-control" type="email" placeholder="Email Address">
+                            <input class="form-control" type="email" placeholder="Email Address" v-model="contact.email">
+                            <h6 v-if="error.email" v-text="error.email[0]" class="text-danger"></h6>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" rows="4" cols="120" placeholder="Message"></textarea>
+                            <textarea class="form-control" rows="4" cols="120" placeholder="Message" v-model="contact.message"></textarea>
+                            <h6 v-if="error.message" v-text="error.message[0]" class="text-danger"></h6>
                         </div>
-                        <button class="btn signin">Send Message <i class="fa fa-long-arrow-alt-right"></i></button>
-                    </form>
+                        <button class="btn signin" @click="SendMessage()">Send Message <i class="fa fa-long-arrow-alt-right"></i></button>
+                    </div>
                 </div>
-            </div>       
+            </div> 
+                 
     </div>
 
       
     </section>
   </div>
 </template>
+<script>
+export default{
+  data(){
+    return{
+      contact:{
+        name:'',
+        email:'',
+        subject:'',
+        message:''
+      },
+      error:[],
+    }
+  },
+  methods: {
+    SendMessage(){
+     
+      this.$axios.$post("/contact",this.contact)
+        .then((res) => {
+          this.contact ="",
+          this.error = "",
+           this.$toaster.success(res.message);
+          
+
+          console.log(res);
+        })
+        .catch((err) => {
+          this.error = err.response.data.errors;
+          console.log(err);
+        });
+    }
+  }
+
+
+}
+</script>
 <style scoped>
 .contact {
   background: linear-gradient(
@@ -82,7 +118,7 @@
 }
 .contact h2 {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 60px;
   font-size: 45px;
   color: #fff;
 }

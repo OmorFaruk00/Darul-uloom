@@ -5,9 +5,11 @@
         <div class="col-sm-12 col-md-6 col-xl-6" v-if="notices">
         <h2 class="font-weight-bolder  pb-2">OUR LATEST EVENTS</h2>
         <div class="notice-body p-3" >
-          <div class="p-2 d-flex" v-for="notice in notices.slice(0,4)" :key="notice.id">
+          <div v-for="notice in notices.slice(0,4)" :key="notice.id">
+          <nuxt-link :to="`/notice-detail/${notice.id}`" class="p-2 d-flex">
             <h6 class="notice-date">{{notice.published_date}}</h6>
             <h6 class="notice-title">{{notice.title}}</h6>
+            </nuxt-link>
           </div>
                 
           <div class="d-flex justify-content-end">
@@ -18,9 +20,11 @@
       <div class="col-sm-12 col-md-6 col-xl-6" v-if="events">
         <h2 class="font-weight-bolder  pb-2">OUR LATEST EVENTS</h2>
         <div class="notice-body p-3" >
-          <div class="p-2 d-flex" v-for="event in events.slice(0,4)" :key="event.id">
+          <div v-for="event in events.slice(0,4)" :key="event.id">
+          <nuxt-link :to="`/notice-detail/${event.id}`" class="p-2 d-flex">
             <h6 class="notice-date">{{event.published_date}}</h6>
             <h6 class="notice-title">{{event.title}}</h6>
+            </nuxt-link>
           </div>
                 
           <div class="d-flex justify-content-end">
@@ -69,11 +73,10 @@ export default{
 <style scoped>
 .notice{
   padding: 5% 3%;
-  background-image:url("/images/bg3.png");
-  /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.8) 100%),url("/images/bg2.webp"); */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+  
+  background: #fff;
+  /* background-image:url("/images/bg3.png"); */
+  /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.8) 100%),url("/images/bg2.webp"); */  
   
 }
  .notice-body{
@@ -84,15 +87,16 @@ export default{
  .notice-date{
      font-size: 15px;
      background: rgb(204, 203, 203);
-     padding: 10px;
+     padding: 14px;
      border-radius: 10px;
      margin-right: 20px;
      font-weight: 900;
+     width: 33% ;
  }
  .notice-title{
      padding-top: 10px;
      font-size: 15px;
-     font-weight: 900;     
+     font-weight: 600;     
  }
  .notice-title:hover{
      cursor: pointer;

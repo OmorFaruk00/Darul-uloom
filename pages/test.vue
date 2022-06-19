@@ -1,35 +1,96 @@
 <template>
-  <section class="facilitie">
-    <div class="container">
-      <h2 class="title pb-5">OUR FACILITIES</h2>
-      <client-only>
-        <carousel v-if="facilities" 
-          :autoplay="true"
-          :responsive="responsive"
-          :dots="false"
-          :loop="true"
-        >
-          <!-- <carousel> -->
-          <slide v-for="facilitie in facilities" :key="facilitie.id">
-            <div class="py-5" >
-                <div class="content">
-              <div class="content-body">
-                <h2>{{facilitie.title}}</h2>
-                <p>
-                  {{facilitie.description}}                  
-                </p>
-              </div>
-            </div>
-            </div>
-          </slide>         
-        </carousel>
-        <div v-else>
+    <div class="tuition">
+        <div id="main">
+            <div class="container">
+                <h2 class="title pb-5">FEE</h2>
+                <div class="accordion" id="faq">
+                    <div class="card" v-if="fee.residential">
+                        <div class="card-header" id="faqhead1">
+                            <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1"
+                                aria-expanded="true" aria-controls="faq1">Residential</a>
+                        </div>
+                        <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                            <div class="card-body">
+                                 <table class="table table-striped text-center">
+                                    <thead>
+                                        <tr>                                            
+                                            <th>Name of Program</th>
+                                            <th>Duration</th>
+                                            <th>Total Fees (BDT)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody v-for="residential in fee.residential"  :key="residential.id">
+                                        <tr>                                            
+                                            <td>{{residential.name_of_program}}</td> 
+                                            <td>{{residential.duration}} Year</td>
+                                           <td>{{residential.total_fee}}</td> 
+                                            
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" v-if="fee.non_residential">
+                        <div class="card-header" id="faqhead2">
+                            <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                                aria-expanded="true" aria-controls="faq2">Non-resident</a>
+                        </div>
 
+                        <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                            <div class="card-body">
+                                <table class="table table-striped text-center">
+                                    <thead>
+                                        <tr>                                            
+                                            <th>Name of Program</th>
+                                            <th>Duration</th>
+                                            <th>Total Fees (BDT)</th>
+                                        </tr>
+                                    </thead>
+                                      <tbody v-for="non_residential in fee.non_residential"  :key="non_residential.id">
+                                        <tr>                                            
+                                            <td>{{non_residential.name_of_program}}</td> 
+                                            <td>{{non_residential.duration}} Year</td>
+                                           <td>{{non_residential.total_fee}}</td>                                            
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" v-if="fee.day_care">
+                        <div class="card-header" id="faqhead3">
+                            <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                                aria-expanded="true" aria-controls="faq3">Day Care</a>
+                        </div>
+                        <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                            <div class="card-body">
+                                 <table class="table table-striped text-center">
+                                    <thead>
+                                        <tr>                                            
+                                            <th>Name of Program</th>
+                                            <th>Duration</th>
+                                            <th>Total Fees (BDT)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody v-for="day_care in fee.day_care"  :key="day_care.id">
+                                        <tr>                                            
+                                            <td>{{day_care.name_of_program}}</td> 
+                                            <td>{{day_care.duration}} Year</td>
+                                           <td>{{day_care.total_fee}}</td>                                            
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>            
+                   
+
+                </div>
+            </div>
         </div>
-        </client-only>
-      
     </div>
-  </section>
 </template>
 <script>
 
@@ -40,24 +101,18 @@ export default {
   },
   data() {
     return {
-        facilities:'',
-      responsive: {
-        0: { items: 1, nav: false },
-        576: { items: 1, nav: false },
-        768: { items: 1, nav: false },
-        992: { items: 2, nav: false },
-        1200: { items: 2, nav: true },
-      },
+        fee:'',
+      
       
 
     };
   },
   methods: {
      getFacilitie() {
-      this.$axios.$get("/facililies")
+      this.$axios.$get("/tution-fee")
         .then((res) => {
           console.log('res');
-          this.facilities = res;
+          this.fee = res;
         })
         .catch((err) => {
           console.log(err);
@@ -67,45 +122,78 @@ export default {
 };
 </script>
 <style scoped>
-.facilitie {
-  padding: 80px;
-  background: #f5f5f5;
-  /* background-image:url("/images/bg3.png"); */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  
+.tuition {
+    background-color: hsl(60, 22%, 96%);
+    padding: 70px;
 }
 
-.content {
-  width: 95%;  
-  transform: scale(1);
-  transition: all 1s ease-in-out 0s;
-  border-radius: 10px;
-  background: #fff;
-  padding: 20px 20px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+/* #main {
+  margin: 50px 0;
+  padding: 70px !important;
+} */
 
+#main #faq .card {
+    margin-bottom: 30px;
+    border: 0;
 }
-.content:hover {
-  transform: scale(1.05);
-}
-.content-body h2 {
-  font-size: 20px;
-  text-align: left;
-  font-weight: 700;
-  color: rgb(35, 34, 34);
-  padding-bottom: 10px;
-}
-.owl-theme .owl-nav {
-  font-size: 50px !important;
-}
- @media only screen and (max-width: 767px) {
-   .card {
-  width: 100%;
+
+#main #faq .card .card-header {
+    border: 0;
+    -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+    border-radius: 5px;
+    padding: 0;
 
 }
 
-    
- }
+.card-header a {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+#main #faq .card .card-header .btn-header-link {
+    color: #fff;
+    display: block;
+    text-align: left;
+    background: #fff;
+    color: #222;
+    padding: 15px;
+}
+
+#main #faq .card .card-header .btn-header-link:after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed {
+    background: #fff;
+    color: rgb(14, 5, 5);
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed:after {
+    content: "\f106";
+}
+
+#main #faq .card .collapsing {
+    background: #fff;
+    line-height: 30px;
+}
+
+#main #faq .card .collapse {
+    border: 0;
+}
+
+#main #faq .card .collapse.show {
+    background: #fff;
+    line-height: 30px;
+    color: #222;
+}
+@media only screen and (max-width: 767px) {
+    .tuition{
+        padding: 10px;
+    }
+}
 </style>

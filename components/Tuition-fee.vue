@@ -4,48 +4,34 @@
             <div class="container">
                 <h2 class="title pb-5">FEE</h2>
                 <div class="accordion" id="faq">
-                    <div class="card">
+                    <div class="card" v-if="fee.residential">
                         <div class="card-header" id="faqhead1">
                             <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1"
                                 aria-expanded="true" aria-controls="faq1">Residential</a>
                         </div>
-
                         <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
                             <div class="card-body">
-                                 <table class="table table-striped">
+                                 <table class="table table-striped text-center">
                                     <thead>
-                                        <tr>
-                                            <th>Sl. No.</th>
+                                        <tr>                                            
                                             <th>Name of Program</th>
                                             <th>Duration</th>
                                             <th>Total Fees (BDT)</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Ibtedayi</td>
-                                            <td>1 years</td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Dakhil</td>
-                                            <td>2 years</td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Alim</td>
-                                            <td>2 years</td>
-                                            <td>10000</td>
-                                        </tr>
+                                    <tbody v-for="residential in fee.residential"  :key="residential.id">
+                                        <tr>                                            
+                                            <td>{{residential.name_of_program}}</td> 
+                                            <td>{{residential.duration}} Year</td>
+                                           <td>{{residential.total_fee}}</td> 
+                                            
+                                        </tr>                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" v-if="fee.non_residential">
                         <div class="card-header" id="faqhead2">
                             <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
                                 aria-expanded="true" aria-controls="faq2">Non-resident</a>
@@ -53,81 +39,52 @@
 
                         <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
                             <div class="card-body">
-                                <table class="table table-striped">
+                                <table class="table table-striped text-center">
                                     <thead>
-                                        <tr>
-                                            <th>Sl. No.</th>
+                                        <tr>                                            
                                             <th>Name of Program</th>
                                             <th>Duration</th>
                                             <th>Total Fees (BDT)</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Ibtedayi</td>
-                                            <td>1 years</td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Dakhil</td>
-                                            <td>2 years</td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Alim</td>
-                                            <td>2 years</td>
-                                            <td>10000</td>
-                                        </tr>
+                                      <tbody v-for="non_residential in fee.non_residential"  :key="non_residential.id">
+                                        <tr>                                            
+                                            <td>{{non_residential.name_of_program}}</td> 
+                                            <td>{{non_residential.duration}} Year</td>
+                                           <td>{{non_residential.total_fee}}</td>                                            
+                                        </tr>                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" v-if="fee.day_care">
                         <div class="card-header" id="faqhead3">
                             <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
                                 aria-expanded="true" aria-controls="faq3">Day Care</a>
                         </div>
-
                         <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
                             <div class="card-body">
-                                 <table class="table table-striped">
+                                 <table class="table table-striped text-center">
                                     <thead>
-                                        <tr>
-                                            <th>Sl. No.</th>
+                                        <tr>                                            
                                             <th>Name of Program</th>
                                             <th>Duration</th>
                                             <th>Total Fees (BDT)</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Ibtedayi</td>
-                                            <td>1 years</td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Dakhil</td>
-                                            <td>2 years</td>
-                                            <td>10000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Alim</td>
-                                            <td>2 years</td>
-                                            <td>10000</td>
-                                        </tr>
+                                    <tbody v-for="day_care in fee.day_care"  :key="day_care.id">
+                                        <tr>                                            
+                                            <td>{{day_care.name_of_program}}</td> 
+                                            <td>{{day_care.duration}} Year</td>
+                                           <td>{{day_care.total_fee}}</td>                                            
+                                        </tr>                                        
                                     </tbody>
                                 </table>
 
                             </div>
                         </div>
-                    </div>
+                    </div>            
                    
 
                 </div>
@@ -135,6 +92,35 @@
         </div>
     </div>
 </template>
+<script>
+
+export default {
+ 
+ mounted(){
+    this.getFacilitie();
+  },
+  data() {
+    return {
+        fee:'',
+      
+      
+
+    };
+  },
+  methods: {
+     getFacilitie() {
+      this.$axios.$get("/tution-fee")
+        .then((res) => {
+          console.log('res');
+          this.fee = res;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
+};
+</script>
 <style scoped>
 .tuition {
     background-color: hsl(60, 22%, 96%);

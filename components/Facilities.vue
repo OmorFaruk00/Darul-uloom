@@ -70,10 +70,8 @@ export default {
 .facilitie {
   padding: 80px;
   background: #f5f5f5;
-  /* background-image:url("/images/bg3.png"); */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  /* background-image:url("/images/bg3.png"); */ 
+ 
   
 }
 
@@ -83,7 +81,8 @@ export default {
   transition: all 1s ease-in-out 0s;
   border-radius: 10px;
   background: #fff;
-  padding: 20px 20px;
+  padding: 20px 20px;  
+  margin: 0 auto;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
 }

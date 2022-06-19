@@ -87,9 +87,6 @@
   </div>
 </template>
 <style scope>
-.navbar{
-    background: rgb(48, 67, 132);
-}
 .top-icon img{
   height: 25px;
   width: auto;
@@ -132,12 +129,15 @@
 }
 .nav-item {
     color: #fff;
+    font-weight: 700;
 }
 .dropdown-item{
     color: #000;
 }
 .navbar {
-    background:rgb(24, 35, 72);
+    /* background:rgb(24, 35, 72); */
+    background: #337ab7;
+
 }
 .menu_icon{
     color: rgb(87, 10, 10);

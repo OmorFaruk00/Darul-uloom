@@ -1,11 +1,7 @@
 <template>
   <div>
     <div class="about">
-      <h2 class="title">about Us</h2>
-      <p class="">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-        cumque!
-      </p>
+      <h2 class="title">about Us</h2>    
     </div>
     <!-- about-intro -->
     <div class="about-intro">
@@ -86,7 +82,7 @@
 .about h2 {
   text-align: center;
   padding-top: 40px;
-  font-size: 45px;
+  font-size: 60px;
   color: #fff;
 }
 .about p {

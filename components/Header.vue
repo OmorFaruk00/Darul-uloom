@@ -1,78 +1,107 @@
 <template>
-  <div id="demo" class="carousel slide" data-ride="carousel">   
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img
-          src="images/slider1.jpg"
-          alt="Los Angeles"
-          width="2100"
-          height="700"
-        />
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="content-block">
-              <h2 class="text-center">
-                <span class="text-white">Hearty Welcomes with </span>
-                <br />
-                <span class="text-white">a Touch of Rivalry</span>
-              </h2>
-              <a href="#" class="bnt bnt-apply">APPLY NOW</a>
+  <section class="">
+    <div class="">      
+      <client-only>
+        <carousel v-if="sliders" :autoplay="true" :responsive="responsive" :dots="false" :loop="true">         
+          <slide v-for="slider in sliders" :key="slider.id">
+            <img :src="'http://localhost:8000/images/dum/'+slider.image" alt="image"  width="100vw" height="700" />            
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="content-block">                  
+                    <h2>{{slider.title}}</h2>
+                    
+                    <p>{{slider.description}}</p>                  
+                  <a href="#" class="btn-apply">APPLY NOW</a>
+                </div>
+              </div>
             </div>
-          </div>
+          </slide>
+        </carousel>
+        <div v-else>
+
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/slider2.jpg" alt="Chicago" width="2100" height="700" />
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="content-block">
-              <h2>
-                <span class="text-white">professor explores</span>
-                <br />
-                <span class="text-white">marine biology with teens</span>
-              </h2>
-              <a href="#" class="bnt bnt-apply read-story">APPLY NOW</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img
-          src="images/slider4.jpg"
-          alt=""
-          width="2100"
-          height="700"
-        />
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="content-block">
-              <h2>
-                <span class="text-white">Hearty Welcomes with </span> <br />
-                <span class="text-white">a Touch of Rivalry</span>
-              </h2>
-              <a href="#" class="bnt bnt-apply">APPLY NOW</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </client-only>
+
     </div>
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>
+  </section>
 </template>
-<style scope>
+<script>
+
+export default {
+
+  mounted() {
+    this.getSlider();
+  },
+  data() {
+    return {
+      sliders: '',
+      responsive: {
+        0: { items: 1, nav: false },
+        576: { items: 1, nav: false },
+        768: { items: 1, nav: false },
+        992: { items: 1, nav: false },
+        1200: { items: 1, nav: false },
+      },
+
+
+    };
+  },
+  methods: {
+    getSlider() {
+      this.$axios.$get("/slider")
+        .then((res) => {
+          console.log('res');
+          this.sliders = res;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
+};
+</script>
+<style scoped>
+.btn-apply:hover{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    color: #fff;
+}
+.btn-apply{
+    color: #fff;
+    background: #00a9ef;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+.content-block h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.content-block p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 50px;
+   color: #fff;
+} 
+
 @media only screen and (max-width: 767px) {
-  .content-block h2 span{
-    font-size: 1.2rem;
-    line-height: 0.1 !important;
+  .content-block h2{
+    font-size: 1.2rem
+    
   }
-  .carousel-item{
-    height: 400px;
+  .content-block p{
+    font-size: 0.8rem;
   }
+  
+  
      
  }
 </style>

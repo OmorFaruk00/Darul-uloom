@@ -1,11 +1,7 @@
 <template>
     <div class="admission-bg">
         <div class="admission">
-            <h2 class="title"> ADMISSION</h2>
-            <p class="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-                cumque!
-            </p>
+            <h2 class="title"> ADMISSION</h2>           
         </div>
 
         <div class="container pb-5">
@@ -60,8 +56,8 @@
 
 .admission h2 {
     text-align: center;
-    padding-top: 40px;
-    font-size: 45px;
+    padding-top: 60px;
+    font-size: 60px;
     color: #fff;
 }
 
@@ -133,6 +129,7 @@
     background: #e5e9ed;
     position: relative;
     transition: all 0.3s ease 0s;
+    
 }
 
 .main-timeline .timeline-content:hover {
