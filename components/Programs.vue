@@ -1,76 +1,21 @@
 <template>
-  <section class="bg-white p-5">
+  <section class="program p-5">
     <div class="container">
       <h2 class="title pb-3">OUR PROGRAMS</h2>
       <client-only>
-      <carousel
-        :autoplay="true"
-        :responsive="responsive"
-        :dots="false"
-        :loop="true"
-      >
-      
-        <slide>
-          <div class="card">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-              class="card-img-top"
-              alt="Fissure in Sandstone"
-            />
-            <div class="card-body pb-5">
-              <h2 class="card-title">Department of CSE</h2>
-              <div class="d-flex justify-content-center">
-                  <nuxt-link to="/#" class="bnt-apply ">APPLY NOW</nuxt-link>
-              </div>              
+        <carousel v-if="programs" :autoplay="true" :responsive="responsive" :dots="false" :loop="true">
+          <slide v-for="program in programs" :key="program.id">
+            <div class="card my-5">
+              <img :src="'http://localhost:8000/images/dum/' + program.image" alt="image" height="300" />
+              <div class="card-body pb-5">
+                <h2 class="card-title">{{ program.name }}</h2>
+                <div class="d-flex justify-content-center">
+                  <nuxt-link to="/#" class=" btn-apply">APPLY NOW</nuxt-link>
+                </div>
+              </div>
             </div>
-          </div>
-        </slide>        
-         <slide>
-          <div class="card">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-              class="card-img-top"
-              alt="Fissure in Sandstone"
-            />
-            <div class="card-body pb-5">
-              <h2 class="card-title">Department of CSE</h2>
-              <div class="d-flex justify-content-center">
-                  <nuxt-link to="/#" class="bnt-apply ">APPLY NOW</nuxt-link>
-              </div>              
-            </div>
-          </div>
-        </slide>  
-         <slide>
-          <div class="card">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-              class="card-img-top"
-              alt="Fissure in Sandstone"
-            />
-            <div class="card-body pb-5">
-              <h2 class="card-title">Department of CSE</h2>
-              <div class="d-flex justify-content-center">
-                  <nuxt-link to="/#" class="bnt-apply ">APPLY NOW</nuxt-link>
-              </div>              
-            </div>
-          </div>
-        </slide>  
-         <slide>
-          <div class="card">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-              class="card-img-top"
-              alt="Fissure in Sandstone"
-            />
-            <div class="card-body pb-5">
-              <h2 class="card-title">Department of CSE</h2>
-              <div class="d-flex justify-content-center">
-                  <nuxt-link to="/#" class="bnt-apply ">APPLY NOW</nuxt-link>
-              </div>              
-            </div>
-          </div>
-        </slide>  
-      </carousel>
+          </slide>
+        </carousel>
       </client-only>
     </div>
   </section>
@@ -88,43 +33,72 @@ export default {
         992: { items: 2, nav: false },
         1200: { items: 3, nav: true },
       },
+      programs: "",
     };
   },
-  methods: {},
+  mounted() {
+    this.getProgram();
+  },
+
+  methods: {
+    getProgram() {
+      this.$axios.$get("/program")
+        .then((res) => {
+          console.log('res');
+          this.programs = res;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+  },
+
 };
 </script>
 <style scoped>
+.btn-apply:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: #fff;
+}
 
-.card{
-    width: 95%;
-    transform: scale(1);
-    transition: all 1s ease-in-out 0s;
+.btn-apply {
+  color: #fff;
+  background: #00a9ef;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  border: none;
 }
-.card:hover{
-    transform: scale(1.05);
-    
+
+.program {
+  /* background-color: hsl(60, 22%, 96%); */
+  background: #f5f5f5;
 }
-.card-body h2{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 700;
-    color: #000;
-    padding-bottom: 20px;
+
+.card {
+  width: 95%;
+  transform: scale(1);
+  transition: all 1s ease-in-out 0s;
+  margin: 0 auto;  
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
 }
-.bnt-apply{
-    background: rgb(48, 67, 132);
-     padding: 10px 25px;
-     border-radius: 8px;     
-     color: #fff;
-     font-size: 15px;
-     float: center;
-    
- }
- .bnt-apply:hover{
-    background: rgb(24, 35, 72);
-     padding: 10px 25px;     
-     cursor: pointer;
-     color: #fff;
-     
- }
+
+.card:hover {
+  transform: scale(1.05);
+
+}
+
+.card-body h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 20px;
+}
 </style>
