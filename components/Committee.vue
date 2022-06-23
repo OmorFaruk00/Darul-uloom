@@ -2,373 +2,30 @@
   <div class="committee">
     <div id="main">
       <div class="container">
-        <h2 class="title pb-4">GOVERNING BODIES</h2>
+        <h2 class="title pb-5">GOVERNING BODIES</h2>
         <div class="accordion" id="faq">
-          <div class="card">
-            <div class="card-header" id="faqhead1">
-              <a
-                href="#"
-                class="btn btn-header-link"
-                data-toggle="collapse"
-                data-target="#faq1"
-                aria-expanded="true"
-                aria-controls="faq1"
-                >Board of Trustees</a
-              >
-            </div>
 
-            <div
-              id="faq1"
-              class="collapse"
-              aria-labelledby="faqhead1"
-              data-parent="#faq"
-            >
-              <div class="card-body">
-                <div class="row pb-3">
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/1.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/2.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/3.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/4.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="faqhead2">
-              <a
-                href="#"
-                class="btn btn-header-link collapsed"
-                data-toggle="collapse"
-                data-target="#faq2"
-                aria-expanded="true"
-                aria-controls="faq2"
-                >Syndicate</a
-              >
-            </div>
 
-            <div
-              id="faq2"
-              class="collapse"
-              aria-labelledby="faqhead2"
-              data-parent="#faq"
-            >
-              <div class="card-body">
-                <div class="row pb-3">
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/5.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/3.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/3.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/8.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="faqhead3">
-              <a
-                href="#"
-                class="btn btn-header-link collapsed"
-                data-toggle="collapse"
-                data-target="#faq3"
-                aria-expanded="true"
-                aria-controls="faq3"
-                >Academic Council</a
-              >
-            </div>
-
-            <div
-              id="faq3"
-              class="collapse"
-              aria-labelledby="faqhead3"
-              data-parent="#faq"
-            >
-              <div class="card-body">
-               <div class="row pb-3">
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/1.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/8.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/3.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/5.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
+          <div class="card" v-if="committee.Majlishe_Shura">
             <div class="card-header" id="faqhead4">
-              <a
-                href="#"
-                class="btn btn-header-link collapsed"
-                data-toggle="collapse"
-                data-target="#faq4"
-                aria-expanded="true"
-                aria-controls="faq4"
-                >Sexual Harassment Prevention Complaints Committeel</a
-              >
+              <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                aria-expanded="true" aria-controls="faq4">Mojlishe Shura</a>
             </div>
 
-            <div
-              id="faq4"
-              class="collapse"
-              aria-labelledby="faqhead3"
-              data-parent="#faq"
-            >
+            <div id="faq4" class="collapse px-3" aria-labelledby="faqhead3" data-parent="#faq">
               <div class="card-body">
                 <div class="row pb-3">
-                  <div class="col-md-3 col-sm-12 col-xl-3">
+                  <div class="col-md-4 col-sm-12 col-xl-4 pb-5" v-for="committee in committee.Majlishe_Shura"
+                    :key="committee.id">
                     <div class="our-committee">
                       <div class="pic">
-                        <img src="images/2.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
+                        <img :src="'http://localhost:8000/images/dum/' + committee.image" alt="image"
+                          class="committee_img" />
                       </div>
                       <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/3.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/4.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/3.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
+                        <h3 class="">{{ committee.member_name }} ({{ committee.member_type }})</h3>
+                        <!-- <span class="post">{{committee.member_type}}</span> -->
+                        <span class="profession">Profession : {{ committee.profession }}</span>
                       </div>
                     </div>
                   </div>
@@ -376,92 +33,53 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="faqhead5">
-              <a
-                href="#"
-                class="btn btn-header-link collapsed"
-                data-toggle="collapse"
-                data-target="#faq5"
-                aria-expanded="true"
-                aria-controls="faq5"
-                >Executives</a
-              >
+          <div class="card" v-if="committee.Majlishe_">
+            <div class="card-header" id="faqhead4">
+              <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                aria-expanded="true" aria-controls="faq4">Mojlishe Shura</a>
             </div>
 
-            <div
-              id="faq5"
-              class="collapse"
-              aria-labelledby="faqhead5"
-              data-parent="#faq"
-            >
+            <div id="faq4" class="collapse px-3" aria-labelledby="faqhead3" data-parent="#faq">
               <div class="card-body">
                 <div class="row pb-3">
-                  <div class="col-md-3 col-sm-12 col-xl-3">
+                  <div class="col-md-4 col-sm-12 col-xl-4 pb-5" v-for="committee in committee.Majlishe_Shura"
+                    :key="committee.id">
                     <div class="our-committee">
                       <div class="pic">
-                        <img src="images/5.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
+                        <img :src="'http://localhost:8000/images/dum/' + committee.image" alt="image"
+                          class="committee_img" />
                       </div>
                       <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
+                        <h3 class="">{{ committee.member_name }} ({{ committee.member_type }})</h3>
+                        <!-- <span class="post">{{committee.member_type}}</span> -->
+                        <span class="profession">Profession : {{ committee.profession }}</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card " v-if="committee.Majlishe_Alema">
+            <div class="card-header" id="faqhead5">
+              <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
+                aria-expanded="true" aria-controls="faq5">Mojlishe Alema</a>
+            </div>
+
+            <div id="faq5" class="collapse px-3" aria-labelledby="faqhead5" data-parent="#faq">
+              <div class="card-body">
+                <div class="row pb-3">
+                  <div class="col-md-4 col-sm-12 col-xl-4 pb-5 " v-for="committee in committee.Majlishe_Alema"
+                    :key="committee.id">
                     <div class="our-committee">
                       <div class="pic">
-                        <img src="images/3.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
+                        <img :src="'http://localhost:8000/images/dum/' + committee.image" alt="image"
+                          class="committee_img" />
+
                       </div>
                       <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/8.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-12 col-xl-3">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img src="images/2.jpeg" />
-                        <ul class="social">
-                          <li><a href="#" class="fab fa-facebook"></a></li>
-                          <li><a href="#" class="fab fa-google-plus"></a></li>
-                          <li><a href="#" class="fab fa-instagram"></a></li>
-                          <li><a href="#" class="fab fa-linkedin"></a></li>
-                        </ul>
-                      </div>
-                      <div class="content">
-                        <h3 class="">Name </h3>
-                        <span class="post">Position</span>
+                        <h3 class="">{{ committee.member_name }} ({{ committee.member_type }})</h3>
+                        <span class="profession">Profession : {{ committee.profession }}</span>
                       </div>
                     </div>
                   </div>
@@ -474,32 +92,66 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      committee: "",
+
+    }
+  },
+  mounted() {
+    this.getCommittee();
+  },
+  methods: {
+    getCommittee() {
+      this.$axios.$get("/committee")
+        .then((res) => {
+          this.committee = res;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
+
+  },
+}
+</script>
 <style scoped>
+.profession {
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: 700;
+}
+
+.committee_img {
+  height: 300px !important;
+}
+
 .committee {
   background-color: hsl(60, 22%, 96%);
-  padding: 3%;
+  padding: 5%;
 }
-#main {
-  /* margin: 50px 0; */
-  /* padding: 700px !important; */
-}
+
+
 
 #main #faq .card {
   margin-bottom: 30px;
   border: 0;
 }
 
-#main #faq .card .card-header {
+.card-header {
   border: 0;
   -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
   box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
   border-radius: 5px;
   padding: 0;
-  
+
 }
-.card-header a{
-    font-size: 20px;
-    font-weight: 400;
+
+.card-header a {
+  font-size: 20px;
+  font-weight: 400;
 
 }
 
@@ -544,62 +196,44 @@
 }
 
 .our-committee {
-  text-align: center;
-  transition: all 0.5s ease 0s;
-  border: 1px solid #575656;
-  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
 }
 
-.our-committee:hover {
-  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-    border: none;
-}
+
+
 .pic {
   height: 15%;
-  
-}
-.our-committee .pic {
-  overflow: hidden;
-  position: relative;
-}
-.our-committee .pic:before,
-.our-committee .pic:after {
-  content: "";
-  width: 200%;
-  height: 80%;
-  background: rgba(38, 37, 37, 0.8);
-  position: absolute;
-  top: -100%;
-  left: -4%;
-  transform: rotate(45deg);
-  transition: all 0.5s ease 0s;
+
 }
 
-.content h3{    
-    font-size: 20px;   
+
+
+
+.content h3 {
+  font-size: 18px;
+  font-weight: 900;
+
 }
-.content {    
-    text-align: left;   
-    
+
+.content {
+  text-align: left;
+  height: 120px;
+
 }
-.our-committee .pic:after {
-  background: rgba(8, 75, 77, 0.8);
-  top: auto;
-  left: auto;
-  bottom: -100%;
-  right: -4%;
-}
-.our-committee:hover .pic:before {
-  top: 0;
-}
+
+
+
+
+
 .our-committee:hover .pic:after {
   bottom: 0;
 }
+
 .our-committee .pic img {
   width: 100%;
   height: auto;
 }
+
 .our-committee .social {
   width: 100%;
   padding: 0;
@@ -612,12 +246,15 @@
   z-index: 2;
   transition: all 0.5s ease 0.3s;
 }
+
 .our-committee:hover .social {
   opacity: 1;
 }
+
 .our-committee .social li {
   display: inline-block;
 }
+
 .our-committee .social li a {
   display: block;
   width: 40px;
@@ -629,6 +266,7 @@
   position: relative;
   transition: all 0.3s ease 0s;
 }
+
 .our-committee .social li a:after {
   content: "";
   width: 100%;
@@ -641,12 +279,15 @@
   z-index: -1;
   transition: all 0.3s ease 0s;
 }
+
 .our-committee .social li a:hover:after {
   transform: rotate(180deg);
 }
+
 .our-committee .content {
   padding: 20px;
 }
+
 .our-committee . {
   font-size: 22px;
   font-weight: 700;
@@ -655,6 +296,7 @@
   text-transform: uppercase;
   margin-bottom: 7px;
 }
+
 .our-committee .post {
   display: block;
   font-size: 17px;
@@ -662,6 +304,7 @@
   color: #707070;
   text-transform: capitalize;
 }
+
 @media only screen and (max-width: 990px) {
   .our-committee {
     margin-bottom: 30px;

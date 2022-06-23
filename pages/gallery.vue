@@ -1,8 +1,10 @@
 <template>
 <div>  
+   <div class="blog-header">
+      <h2 class="title">Photo Gallery</h2>
+    </div>
 
-<div class="container mb-5">
-  <h3 class="title mt-5">Photo Gallery</h3> 
+<div class="container mb-5">   
    <div class="row text-center text-lg-start">
     <div class="col-lg-3 col-md-4 col-6">
       <a href="#" class="d-block mb-4 h-100">
@@ -68,4 +70,23 @@
 </div>
     </div>
 </template>
+<style scoped>
+.blog-header {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%),
+    url("/images/slider4.jpg");
+  background-size: cover;
+  height: 200px !important;
+  background-position: bottom;
+  margin-bottom: 80px;
+}
+
+.blog-header h2 {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 45px;
+  color: #fff;
+}
+</style>
 

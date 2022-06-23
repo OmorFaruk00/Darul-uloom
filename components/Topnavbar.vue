@@ -23,10 +23,11 @@
                 <img src="images/email.png" alt="email">
                 <span>info@darululoommoniram.com</span><br />
                 
-                <div class="d-flex pt-3">
-                  <p class="btn-lang">বাংলা</p>
-                  <p class="btn-lang">English</p>
-                  <p class="btn-lang">عربي</p>
+                <div class="d-flex pt-3">                   
+                  <a  class="btn-lang" @click="changeLanguage('ba')">বাংলা</a>
+                  <a class="btn-lang" @click="changeLanguage('en')">English</a>
+                  <a class="btn-lang" @click="changeLanguage('ar')">عربي</a>
+                  
                 </div>
               </div>
             </div>
@@ -68,24 +69,34 @@
                         </li>
                         <li class="nav-item">
                             <NuxtLink class="nav-link" to="/blog">BLOG</NuxtLink>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/event">EVENTS</NuxtLink>
-                        </li> -->
+                        </li>                       
 
                         <li class="nav-item">
                             <NuxtLink class="nav-link" to="/gallery">GALLERY</NuxtLink>
-                        </li>
-                        
-                        <!-- <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/login">LOGIN</NuxtLink>
-                        </li> -->
+                        </li>                        
+                       
                     </ul>
                 </div>
             </div>
         </nav>
   </div>
 </template>
+<script>
+export default {
+    data() {
+        // const lang = localStorage.getItem('lang') || 'en';
+        return {
+            lang: 'en',
+        }
+    },
+  methods: {
+    changeLanguage(lang) {     
+      localStorage.setItem('lang', lang);
+      window.location.reload();
+    }
+  }
+  }
+</script>
 <style scope>
 .top-icon img{
   height: 25px;

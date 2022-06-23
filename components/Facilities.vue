@@ -69,7 +69,7 @@ export default {
 <style scoped>
 .facilitie {
   padding: 80px;
-  background: #f5f5f5;
+  background: #f2f2f2;
   /* background-image:url("/images/bg3.png"); */ 
  
   

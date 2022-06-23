@@ -28,6 +28,7 @@
 <script>
 
 export default {
+  
 
   mounted() {
     this.getSlider();
@@ -49,8 +50,7 @@ export default {
   methods: {
     getSlider() {
       this.$axios.$get("/slider")
-        .then((res) => {
-          console.log('res');
+        .then((res) => {          
           this.sliders = res;
         })
         .catch((err) => {

@@ -37,7 +37,7 @@
 <style scoped>
 .counter-bg {
     padding: 4%;
-    background: #fff;
+    background: #f2f2f2;
 }
 
 .counter {

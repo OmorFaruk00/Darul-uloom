@@ -1,7 +1,7 @@
 <template>
 <div class=" our-gallery">
     <div class="container ">
-        <h2 class="title mb-5">Our Gallery</h2>
+        <h2 class="title mb-5">Photo Gallery</h2>
         <div class="row ">
             <div class="col-md-12">
                 <div class="tab " role="tabpanel">                   
@@ -216,7 +216,7 @@ export default {
 }
 .our-gallery{
   padding:  3%;
-  background: #f5f5f5;
+  background: #fff;
 
 }
 .tab-content{

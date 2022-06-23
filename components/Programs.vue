@@ -78,7 +78,7 @@ export default {
 
 .program {
   /* background-color: hsl(60, 22%, 96%); */
-  background: #f5f5f5;
+  background: #f2f2f2;
 }
 
 .card {

@@ -1,256 +1,162 @@
 <template>
-<div>
-  <div class="blog-header">
+  <div>
+    <div class="blog-header">
       <h2 class="title">OUR BLOG LIST</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
-        cumque!
-      </p>
     </div>
 
-  <div class="container event-page">
-    <!-- <h3 class="title mt-5 mb-5"> Blog list</h3> -->
-    <div class="row">
-      <div class="col-md-6 col-lg-4 col-sm-12 mb-5">
-        <div class="blog" style="">
-          <div class="imgbox">
-            <img
-              src="https://picsum.photos/1920/1080"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div class="blog-content">
-            <span
-              ><span class="far fa-user mr-2"></span>Admin March 7, 2022</span
-            >
-            <h4>Blog title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto aliquam ea accusantium nihil enim distinctio iste, fuga
-              sint vitae maxime sed. Ad expedita modi maiores neque inventore
-              voluptatibus in harum..
-            </p>
-            <div class="d-flex justify-content-end">
-              <nuxt-link to="/#" class="read-btn">Read more</nuxt-link>
+    <div class="container event-page">
+      <div class="row" v-if="blogs">
+        <div class="col-md-6 col-lg-4 col-sm-12 mb-5" v-for="blog in blogs" :key="blog.id">
+          <div class="blog" style="">
+            <div class="imgbox">
+              <img :src="
+                  'http://localhost:8000/images/dum/' + blog.files
+                " alt="image" height="250px" width="350px"/>
+            </div>
+            <div class="blog-content">
+              <div class="d-flex justify-content-between">
+                <p><span class="far fa-user mr-2"></span>{{ blog.published_by }}</p> <p> {{blog.published_date}}</p>
+                </div>
+              <h4>{{ blog.title }}</h4>
+              <p class="blog-desc">
+                {{ blog.description }}
+              </p>
+              <div class="d-flex justify-content-end">
+                <nuxt-link :to="`/blog-detail/${blog.id}`" class="read-btn">Read more</nuxt-link>
+              </div>
             </div>
           </div>
         </div>
+
+
       </div>
-      <div class="col-md-6 col-lg-4 col-sm-12 mb-5">
-        <div class="blog" style="">
-          <div class="imgbox">
-            <img
-              src="https://picsum.photos/1920/1080"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div class="blog-content">
-            <span
-              ><span class="far fa-user mr-2"></span>Admin March 7, 2022</span
-            >
-            <h4>Blog title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto aliquam ea accusantium nihil enim distinctio iste, fuga
-              sint vitae maxime sed. Ad expedita modi maiores neque inventore
-              voluptatibus in harum..
-            </p>
-            <div class="d-flex justify-content-end">
-              <nuxt-link to="/#" class="read-btn">Read more</nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 col-sm-12 mb-5">
-        <div class="blog" style="">
-          <div class="imgbox">
-            <img
-              src="https://picsum.photos/1920/1080"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div class="blog-content">
-            <span
-              ><span class="far fa-user mr-2"></span>Admin March 7, 2022</span
-            >
-            <h4>Blog title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto aliquam ea accusantium nihil enim distinctio iste, fuga
-              sint vitae maxime sed. Ad expedita modi maiores neque inventore
-              voluptatibus in harum..
-            </p>
-            <div class="d-flex justify-content-end">
-              <nuxt-link to="/#" class="read-btn">Read more</nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 col-sm-12 mb-5">
-        <div class="blog" style="">
-          <div class="imgbox">
-            <img
-              src="https://picsum.photos/1920/1080"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div class="blog-content">
-            <span
-              ><span class="far fa-user mr-2"></span>Admin March 7, 2022</span
-            >
-            <h4>Blog title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto aliquam ea accusantium nihil enim distinctio iste, fuga
-              sint vitae maxime sed. Ad expedita modi maiores neque inventore
-              voluptatibus in harum..
-            </p>
-            <div class="d-flex justify-content-end">
-              <nuxt-link to="/#" class="read-btn">Read more</nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 col-sm-12 mb-5">
-        <div class="blog" style="">
-          <div class="imgbox">
-            <img
-              src="https://picsum.photos/1920/1080"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div class="blog-content">
-            <span
-              ><span class="far fa-user mr-2"></span>Admin March 7, 2022</span
-            >
-            <h4>Blog title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto aliquam ea accusantium nihil enim distinctio iste, fuga
-              sint vitae maxime sed. Ad expedita modi maiores neque inventore
-              voluptatibus in harum..
-            </p>
-            <div class="d-flex justify-content-end">
-              <nuxt-link to="/#" class="read-btn">Read more</nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 col-sm-12 mb-5">
-        <div class="blog" style="">
-          <div class="imgbox">
-            <img
-              src="https://picsum.photos/1920/1080"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div class="blog-content">
-            <span
-              ><span class="far fa-user mr-2"></span>Admin March 7, 2022</span
-            >
-            <h4>Blog title</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto aliquam ea accusantium nihil enim distinctio iste, fuga
-              sint vitae maxime sed. Ad expedita modi maiores neque inventore
-              voluptatibus in harum..
-            </p>
-            <div class="d-flex justify-content-end">
-              <nuxt-link to="/#" class="read-btn">Read more</nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+
     </div>
   </div>
-  </div>
+
 </template>
+<script>
+export default {
+  data() {
+    return {
+      blogs: '',
+    }
+  },
+  mounted() {
+    this.getBlog();
+  },
+  methods: {
+    getBlog() {
+      this.$axios
+        .$get("/blog")
+        .then((response) => {
+          this.blogs = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+  }
+}
+</script>
 <style scoped>
 .blog-header {
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.7) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    ),
+      rgba(0, 0, 0, 0.7) 100%),
     url("/images/slider4.jpg");
   background-size: cover;
   height: 200px !important;
   background-position: bottom;
   margin-bottom: 80px;
 }
+
 .blog-header h2 {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 60px;
   font-size: 45px;
   color: #fff;
 }
-.blog-header p {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 18px;
-  color: #fff;
+.blog-desc{
+overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5 ;   
+
 }
-.blog {  
+
+
+
+.blog {
   box-shadow: 3px 3px 10px #cbced1, -13px -13px 20px #fff;
 }
+
 .blog-content {
   padding: 5px 20px;
 }
+
 .blog-content span {
   color: rgb(128, 116, 116);
   font-size: 14px;
 }
+
 .blog-content h4 {
   color: rgb(20, 8, 8);
   font-size: 22px;
   padding: 10px 0px;
 }
+
 .blog-content p {
   color: rgb(95, 83, 83);
   line-height: 15px;
   font-size: 14px;
   text-align: justify;
+ 
 }
+
 .read-btn {
   font-size: 16px;
   color: rgb(7, 185, 230);
   padding: 20px 0px;
 }
+
 .read-btn:hover {
   text-decoration: none;
   color: rgb(87, 197, 129);
 }
+
 .imgbox img {
   padding-bottom: 8px;
 }
+
 /* Event Page */
 .event-page {
   margin-bottom: 70px;
 }
+
 .card-title {
   font-size: 20px;
   font-weight: bold;
 }
+
 .card-text {
   font-size: 14px;
   line-height: 16px;
   text-align: justify;
 }
+
 .join-btn {
   font-size: 16px;
   background: #00779c;
   color: #fff;
   padding: 7px 15px;
 }
-.join-btn:hover{  
+
+.join-btn:hover {
   background: #000;
-  color: #fff; 
+  color: #fff;
 
 }
 
@@ -260,25 +166,24 @@
   position: absolute;
   top: -2px;
   left: -2px;
-  background: linear-gradient(
-    45deg,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000,
-    #fb0094,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff0000
-  );
+  background: linear-gradient(45deg,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000,
+      #fb0094,
+      #0000ff,
+      #00ff00,
+      #ffff00,
+      #ff0000);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   z-index: -1;
   animation: animate 20s linear infinite;
 }
+
 .shadow:after {
   filter: blur(10px);
 }
@@ -287,15 +192,18 @@
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 300% 0;
   }
+
   100% {
     background-position: 0 0;
   }
 }
-.news-body{
-    background: #000;
-    height: 500px;
+
+.news-body {
+  background: #000;
+  height: 500px;
 }
 </style>

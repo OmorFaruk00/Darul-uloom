@@ -34,7 +34,7 @@
                     <div class="card" v-if="fee.non_residential">
                         <div class="card-header" id="faqhead2">
                             <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
-                                aria-expanded="true" aria-controls="faq2">Non-resident</a>
+                                aria-expanded="true" aria-controls="faq2">Non Residential</a>
                         </div>
 
                         <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
