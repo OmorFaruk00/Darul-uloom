@@ -15,7 +15,7 @@
             <div id="faq4" class="collapse px-3" aria-labelledby="faqhead3" data-parent="#faq">
               <div class="card-body">
                 <div class="row pb-3">
-                  <div class="col-md-4 col-sm-12 col-xl-4 pb-5" v-for="committee in committee.Majlishe_Shura"
+                  <div class="col-md-6 col-sm-12 col-xl-4 pb-5" v-for="committee in committee.Majlishe_Shura"
                     :key="committee.id">
                     <div class="our-committee">
                       <div class="pic">
@@ -308,6 +308,9 @@ export default {
 @media only screen and (max-width: 990px) {
   .our-committee {
     margin-bottom: 30px;
+  }
+  .title{
+    padding-top: 30px;
   }
 }
 </style>

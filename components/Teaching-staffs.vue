@@ -9,7 +9,7 @@
               <div class="pic">
                 <img :src="
                   'http://localhost:8000/images/emp/' + staff.profile_photo
-                " alt="image" />
+                " alt="image" class="staff_image"/>
               </div>
               <div class="team-content">
                 <h3 class="text-white pb-2">{{ staff.name }}</h3>
@@ -87,16 +87,22 @@ export default {
 .pic img {
   /* height: 400px; */
 }
+.staff_image{
+  height: 400px !important;
+
+}
 
 .our-staff {
   text-align: center;
   width: 95%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 auto;
 }
 
 .our-staff .pic {
  
   position: relative;
-  height: 400px;
+  /* height: 400px !important; */
 }
 
 .our-staff .pic:before,
@@ -234,5 +240,23 @@ export default {
   .our-staff {
     margin-bottom: 10px;
   }
+  .staff{
+    padding-top: 50px;
+  }
+ 
+}
+@media only screen and (max-width: 520px) {
+ .staff_image{
+  height: 200px !important;
+}
+  .team-content h3{
+    font-size: 18px;
+  }
+  .title{
+    font-size: 16px;
+  }
+
+
+ 
 }
 </style>

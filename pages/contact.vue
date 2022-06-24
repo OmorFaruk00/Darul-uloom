@@ -119,7 +119,7 @@ export default{
 .contact h2 {
   text-align: center;
   padding-top: 60px;
-  font-size: 45px;
+  font-size: 40px;
   color: #fff;
 }
 .contact p {

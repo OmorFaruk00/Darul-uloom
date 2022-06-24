@@ -57,7 +57,7 @@
 .admission h2 {
     text-align: center;
     padding-top: 60px;
-    font-size: 60px;
+    font-size: 40px;
     color: #fff;
 }
 

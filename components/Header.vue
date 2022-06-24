@@ -4,12 +4,11 @@
       <client-only>
         <carousel v-if="sliders" :autoplay="true" :responsive="responsive" :dots="false" :loop="true">         
           <slide v-for="slider in sliders" :key="slider.id">
-            <img :src="'http://localhost:8000/images/dum/'+slider.image" alt="image"  width="100vw" height="700" />            
+            <img :src="'http://localhost:8000/images/dum/'+slider.image" alt="image"  class="slider-image" />            
             <div class="carousel-caption">
               <div class="container">
                 <div class="content-block">                  
-                    <h2>{{slider.title}}</h2>
-                    
+                    <h2>{{slider.title}}</h2>                    
                     <p>{{slider.description}}</p>                  
                   <a href="#" class="btn-apply">APPLY NOW</a>
                 </div>
@@ -61,6 +60,11 @@ export default {
 };
 </script>
 <style scoped>
+.slider-image{
+  width: 100vw;
+  height: 700px;
+
+}
 .btn-apply:hover{
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     box-shadow: 3px 3px rgba(0, 0, 0, 0.15), 5px 5px rgba(0, 0, 0, 0.1);
@@ -100,6 +104,11 @@ export default {
   .content-block p{
     font-size: 0.8rem;
   }
+  .slider-image{
+  width: 100vw;
+  height: 400px;
+
+}
   
   
      

@@ -105,7 +105,7 @@ export default {
     padding-bottom: 50px !important;
   }
 }
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 590px) {
   .mission h3 {
     font-size: 16px;
   }
@@ -116,7 +116,7 @@ export default {
     padding: 10px;
   }
   .our-mission {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
 }

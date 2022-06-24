@@ -82,7 +82,12 @@
 
 @media screen and (max-width:990px) {
     .counter {
-        margin-bottom: 40px;
+       margin-bottom: 30px;
+       
     }
+    .counter-bg {
+    padding: 50px 0px;
+    
+}
 }
 </style>

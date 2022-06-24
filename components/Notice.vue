@@ -3,7 +3,7 @@
       <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-xl-6" v-if="notices">
-        <h2 class="font-weight-bolder  pb-2">OUR LATEST EVENTS</h2>
+        <h2 class="font-weight-bolder  pb-2 notice-header">OUR LATEST NOTICES</h2>
         <div class="notice-body p-3" >
           <div v-for="notice in notices.slice(0,4)" :key="notice.id">
           <nuxt-link :to="`/notice-detail/${notice.id}`" class="p-2 d-flex">
@@ -17,8 +17,8 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-6 col-xl-6" v-if="events">
-        <h2 class="font-weight-bolder  pb-2">OUR LATEST EVENTS</h2>
+      <div class="col-sm-12 col-md-6 col-xl-6 event" v-if="events">
+        <h2 class="font-weight-bolder  pb-2 notice-header">OUR LATEST EVENTS</h2>
         <div class="notice-body p-3" >
           <div v-for="event in events.slice(0,4)" :key="event.id">
           <nuxt-link :to="`/notice-detail/${event.id}`" class="p-2 d-flex">
@@ -106,13 +106,34 @@ export default{
      background: rgb(48, 67, 132);;
      color: #fff;
      cursor: pointer;
-
  }
  .btn-see-more:hover{
     background: rgb(24, 35, 72);
     color: #fff;
-    cursor: pointer;
-    
+    cursor: pointer;  
     
 }
+.notice-header{
+    font-size: 28px;
+  }
+@media only screen and (max-width: 767px) {
+  .event{
+    margin-top: 30px;
+  }
+  .notice-header{
+    font-size: 18px;
+  }
+   .notice-date{
+     font-size: 13px;    
+     
+   
+ }
+ .notice-title{
+     
+     font-size: 14px;
+       
+ }
+
+  
+ }
 </style>

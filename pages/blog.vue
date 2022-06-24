@@ -7,12 +7,11 @@
     <div class="container event-page">
       <div class="row" v-if="blogs">
         <div class="col-md-6 col-lg-4 col-sm-12 mb-5" v-for="blog in blogs" :key="blog.id">
-          <div class="blog" style="">
-            <div class="imgbox">
+          <div class="blog">            
               <img :src="
                   'http://localhost:8000/images/dum/' + blog.files
-                " alt="image" height="250px" width="350px"/>
-            </div>
+                " alt="image" class="blog-image"/>
+            
             <div class="blog-content">
               <div class="d-flex justify-content-between">
                 <p><span class="far fa-user mr-2"></span>{{ blog.published_by }}</p> <p> {{blog.published_date}}</p>
@@ -70,13 +69,13 @@ export default {
   background-size: cover;
   height: 200px !important;
   background-position: bottom;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .blog-header h2 {
   text-align: center;
   padding-top: 60px;
-  font-size: 45px;
+  font-size: 40px;
   color: #fff;
 }
 .blog-desc{
@@ -86,11 +85,18 @@ overflow: hidden;
     -webkit-line-clamp: 5 ;   
 
 }
+.blog-image{
+  height: auto;
+  width: 100%;
+  margin-bottom: 15px; 
+
+}
 
 
 
 .blog {
   box-shadow: 3px 3px 10px #cbced1, -13px -13px 20px #fff;
+  width: 100%;
 }
 
 .blog-content {

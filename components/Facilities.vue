@@ -1,7 +1,7 @@
 <template>
   <section class="facilitie">
     <div class="container">
-      <h2 class="title pb-5">OUR FACILITIES</h2>
+      <h2 class="title">OUR FACILITIES</h2>
       <client-only>
         <carousel v-if="facilities" 
           :autoplay="true"
@@ -71,7 +71,6 @@ export default {
   padding: 80px;
   background: #f2f2f2;
   /* background-image:url("/images/bg3.png"); */ 
- 
   
 }
 
@@ -104,7 +103,22 @@ export default {
   width: 100%;
 
 }
-
-    
+.facilitie {
+  padding-bottom: 30px;
+  padding-top: 30px;   
+} 
+.title{
+  font-size: 25px;
+}   
+ }
+  @media only screen and (max-width: 467px) {
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+    .title{
+  font-size: 18px;
+} 
+   
  }
 </style>

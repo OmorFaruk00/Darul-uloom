@@ -81,8 +81,8 @@
 }
 .about h2 {
   text-align: center;
-  padding-top: 40px;
-  font-size: 60px;
+  padding-top: 60px;
+  font-size: 40px;
   color: #fff;
 }
 .about p {
@@ -91,8 +91,8 @@
   font-size: 18px;
   color: #fff;
 }
-.about-intro {
-  padding: 80px;
+.about-intro {  
+  padding-bottom: 80px;
 }
 .intro-img img {
   width: 100%;
@@ -116,11 +116,18 @@
 }
 .title {    
     font-size: 18px;
+    padding-top: 20px;
+    margin-top: 0px;
    
 }
+ .about{
+      margin-bottom: 0px;
+    }
 }
 
-/* @media (min-width: 768px) {
-  
-} */
+ @media only screen and (max-width: 767px) {
+   
+
+   
+ }
 </style>

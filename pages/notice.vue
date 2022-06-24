@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-xl-6" v-if="notices">
-        <h2 class="font-weight-bolder  pb-2">OUR LATEST NOTICES</h2>
+        <h2 class="font-weight-bolder  pb-2 event-title ">OUR LATEST NOTICES</h2>
         <div class="notice-body p-3" >
           <div v-for="notice in notices" :key="notice.id">
            <nuxt-link :to="`/notice-detail/${notice.id}`" class="p-2 d-flex">
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-xl-6" v-if="events">
-        <h2 class="font-weight-bolder  pb-2">OUR LATEST EVENTS</h2>
+        <h2 class="font-weight-bolder  event-title pb-2">OUR LATEST EVENTS</h2>
         <div class="notice-body p-3" >
           <div v-for="event in events" :key="event.id">
           <nuxt-link :to="`/notice-detail/${event.id}`" class="p-2 d-flex">
@@ -71,8 +71,8 @@ export default{
 <style scoped>
 .notice h2 {
   text-align: center;
-  padding-top: 40px;
-  font-size: 45px;
+  padding-top: 60px;
+  font-size: 40px;
   color: #fff;
 }
 .notice p {
@@ -96,12 +96,13 @@ export default{
   background-size: cover;
   height: 200px !important;
   background-position: bottom;
-  margin-bottom: 80px;
+  margin-bottom: 70px; 
+
 }
 
 
 .notice-page {
-  padding-bottom: 80px;
+  padding-bottom: 70px !important;
   /* background: rgb(238, 233, 233); */
   /* background-image: url("/images/bg3.png"); */
 }
@@ -133,5 +134,13 @@ export default{
   background: rgb(24, 35, 72);
   color: #fff;
   cursor: pointer;
+}
+@media only screen and (max-width: 990px) {
+  .event-title{
+    padding-top: 30px;
+  }
+  .notice{
+    margin-bottom: 20px;
+  }
 }
 </style>
