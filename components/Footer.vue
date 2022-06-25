@@ -9,7 +9,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <span>1010 Avenue, sw 54321</span>
                             </div>
                         </div>
                     </div>
@@ -18,7 +18,7 @@
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
-                                <span>9876543210 0</span>
+                                <span>+8809612607772</span>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
                                 <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+                                <span>info@darululoommoniram.com</span>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                                <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
@@ -58,16 +58,15 @@
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><nuxt-link to="/">Home</nuxt-link></li>
+                                <li><nuxt-link to="/about">about us</nuxt-link></li>
+                                <li><nuxt-link to="/contact">contact</nuxt-link></li>
+                                <li><nuxt-link to="/notice">notice</nuxt-link></li>
+                                <li><nuxt-link to="/event">event</nuxt-link></li>
+                                <li><nuxt-link to="/admission">admission</nuxt-link></li>
+                                <li><nuxt-link to="/blog">blog</nuxt-link></li>
+                                <li><nuxt-link to="/gallery">gallery</nuxt-link></li>
+                              
                             </ul>
                         </div>
                     </div>
@@ -91,25 +90,12 @@
             </div>
         </div>
         <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="container">                
+                    <div class=" text-center text-lg-center">
                         <div class="copyright-text">
                             <p>Copyright &copy; 2018, All Right Reserved <a href="#">Omor Faruk</a></p>
                         </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    </div>                    
             </div>
         </div>
     </footer>

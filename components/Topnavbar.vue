@@ -1,51 +1,44 @@
 <template>
-  <div>
-    <div class="top_menu container">
-      <div class="row pb-3">
-        <div class="col-lg-2 col-md-2 col-sm-12">
-          <div class="top-logo">
-            <img src="/images/logo.png" alt="logo" />
-          </div>
-        </div>
-        <div class="col-lg-10 col-md-10 col-sm-12 name">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-xl-8">
-              <div class="top-title">
-                <h2>দারুল উলূম মনিরাম</h2>
-                <h2>دارول أولوم منيرام</h2>
-                <h2>DARUL ULOOM MONIRAM</h2>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 ">
-              <div class="pt-4 top-icon">
-                <img src="images/phone.png" alt="phone"><span>+8809612607772</span
-                ><br />
-                <img src="images/email.png" alt="email">
-                <span>info@darululoommoniram.com</span><br />
-                
-                <div class="d-flex pt-3">                   
-                  <a  class="btn-lang" @click="changeLanguage('ba')">বাংলা</a>
-                  <a class="btn-lang" @click="changeLanguage('en')">English</a>
-                  <a class="btn-lang" @click="changeLanguage('ar')">عربي</a>
-                  
+    <div>
+        <div class="top_menu container">
+            <div class="row pb-2">
+                <div class="col-lg-2 col-md-2 col-sm-12">
+                    <div class="top-logo">
+                        <img src="/images/logo.png" alt="logo" />
+                    </div>
                 </div>
-              </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 ">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-xl-8">
+                            <div class="top-title">
+                                <h2>দারুল উলূম মনিরাম</h2>
+                                <h2>دارول أولوم منيرام</h2>
+                                <h2>DARUL ULOOM MONIRAM</h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4 ">
+                            <div class="pt-3 top-icon">
+                                <img src="images/phone.png" alt="phone"><span>+8809612607772</span><br />
+                                <img src="images/email.png" alt="email">
+                                <span>info@darululoommoniram.com</span><br />
+
+                                <div class="d-flex pt-3">
+                                    <a class="btn-lang" @click="changeLanguage('ba')">বাংলা</a>
+                                    <a class="btn-lang" @click="changeLanguage('en')">English</a>
+                                    <a class="btn-lang" @click="changeLanguage('ar')">عربي</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container ">               
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -59,27 +52,27 @@
                         <li class="nav-item">
                             <NuxtLink class="nav-link" to="/contact">CONTACT</NuxtLink>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <NuxtLink class="nav-link" to="/notice">NOTICE BOARD</NuxtLink>
-                                                                              
+
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <NuxtLink class="nav-link" to="/admission">ADMISSION</NuxtLink>
-                                                                              
+
                         </li>
                         <li class="nav-item">
                             <NuxtLink class="nav-link" to="/blog">BLOG</NuxtLink>
-                        </li>                       
+                        </li>
 
                         <li class="nav-item">
                             <NuxtLink class="nav-link" to="/gallery">GALLERY</NuxtLink>
-                        </li>                        
-                       
+                        </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
-  </div>
+    </div>
 </template>
 <script>
 export default {
@@ -89,85 +82,97 @@ export default {
             lang: 'en',
         }
     },
-  methods: {
-    changeLanguage(lang) {     
-      localStorage.setItem('lang', lang);
-      window.location.reload();
+    methods: {
+        changeLanguage(lang) {
+            localStorage.setItem('lang', lang);
+            window.location.reload();
+        }
     }
-  }
-  }
+}
 </script>
 <style scope>
-.top-icon img{
-  height: 25px;
-  width: auto;
-  padding-right: 10px;
+.top-icon img {
+    height: 25px;
+    width: auto;
+    padding-right: 10px;
 }
 
-.top-logo img{
+.top-logo img {
     height: 100px;
-    margin-top: 25px;
+    margin-top: 20px;
 
 }
-.top-title{
-    margin-top: 20px;
-    
+
+.top-title {
+    margin-top: 15px;
+
 }
-.top-title h2{   
+
+.top-title h2 {
     color: rgb(24, 35, 72);
     /* font-size: 20px; */
 }
-.dropdown-toggle {  
+
+.dropdown-toggle {
     color: #fff;
 }
 
 .dropdown-toggle::after {
-    
+
     cursor: pointer;
     color: #fff;
 }
-.nav-link{
+
+.nav-link {
     font-size: 18px;
     color: #fff !important;
-    margin-right: 20px; 
-  
+    margin-right: 20px;
+
 }
-.nuxt-link-exact-active{
+
+.nuxt-link-exact-active {
     /* background: rgb(0, 255, 166) !important;
     border-radius: 4px; */
     color: rgb(84, 239, 198) !important;
 
 }
+
 .nav-item {
     color: #fff;
     font-weight: 700;
 }
-.dropdown-item{
+
+.dropdown-item {
     color: #000;
 }
+
 .navbar {
     /* background:rgb(24, 35, 72); */
     background: #337ab7;
 
 }
-.menu_icon{
+
+.menu_icon {
     color: rgb(87, 10, 10);
 }
 
-.dropdown-item{
+.dropdown-item {
     color: rgb(48, 67, 132);
     line-height: 20px;
     font-size: 14px;
     padding: 15px 40px 15px 40px;
 }
-.top-icon{
+
+.top-icon {
     font-size: 15px;
     line-height: 25px;
 }
-.top-icon i{
+
+.top-icon i {
     margin-right: 10px;
 }
-.btn-lang{
+
+.btn-lang {
     border: 2px solid rgb(24, 35, 72);
     margin-right: 10px;
     padding: 0px 10px;
@@ -175,51 +180,57 @@ export default {
     border-radius: 5px;
     cursor: pointer;
 }
-.btn-lang:hover{
-    background:rgb(24, 35, 72);
+
+.btn-lang:hover {
+    background: rgb(24, 35, 72);
     color: #fff;
 
 }
 
 /* Header */
-.content-block{
-    margin-bottom: 10px;;
- 
- }
- .content-block h2{
-     font-size: 50px;
-     text-transform: uppercase;
-     margin-bottom: 50px;
- }
- .read-story{
-     padding: 15px 40px 15px 40px;
-     margin-top: 80px;
-     color: white;
- }
- .bnt-apply{
+.content-block {
+    margin-bottom: 10px;
+    ;
+
+}
+
+.content-block h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.read-story {
+    padding: 15px 40px 15px 40px;
+    margin-top: 80px;
+    color: white;
+}
+
+.bnt-apply {
     background: rgb(48, 67, 132);
-     padding: 12px 25px;
-     border-radius: 8px;     
-     color: #fff;
-     font-size: 18px;
- }
- .bnt-apply:hover{
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.bnt-apply:hover {
     background: rgb(24, 35, 72);
-     padding: 12px 25px;     
-     cursor: pointer;
-     color: #fff;
-     
- }
- @media only screen and (max-width: 767px) {
-     .top-logo{
-     width: fit-content;
-    margin: 0rem auto;
+    padding: 12px 25px;
+    cursor: pointer;
+    color: #fff;
 
-     }
-     .name{
-         padding-left: 50px;
-     }
- }
+}
 
+@media only screen and (max-width: 767px) {
+    .top-logo {
+        width: fit-content;
+        margin: 0rem auto;
 
+    }
+
+    .name {
+        padding-left: 50px;
+    }
+}
 </style>

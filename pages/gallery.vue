@@ -10,198 +10,51 @@
                 <div class="tab " role="tabpanel">                   
                     <ul class="nav nav-tabs nav-list d-flex justify-content-center" role="tablist">
                         <li role="presentation" class="active">
-                            <a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="btn">all</a >
+                            <a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="btn">Academic</a >
                         </li>
                         <li role="presentation">
                             <a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab" class="btn">Event</a >
                         </li>
                         <li role="presentation">
-                            <a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab" class="btn">recent</a >
+                            <a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab" class="btn">Tour</a >
                         </li>
                     </ul>                  
                     <div class="tab-content tabs">
-                        <div role="tabpanel" class="tab-pane  active" id="Section1">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/pWkk7iiCoDM/400x300"
-                                            alt=""/>
-                                    </a>
+                            <div role="tabpanel" class="tab-pane active" id="Section1" v-if="gallery.academic">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-6" v-for="gallery in gallery.academic"
+                                        :key="gallery.id">
+                                        <img :src="
+                                            'http://localhost:8000/images/gallery/' + gallery.image
+                                        " alt="image" class="gallery_image" />                                      
+                                    </div>
+
+
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/aob0ukAYfuI/400x300"
-                                            alt=""/>
-                                    </a>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section2" v-if="gallery.event">
+                                <div class="row">
+                                     <div class="col-lg-3 col-md-4 col-6" v-for="gallery in gallery.event"
+                                        :key="gallery.id">
+                                        <img :src="
+                                            'http://localhost:8000/images/gallery/' + gallery.image
+                                        " alt="image" class="gallery_image" />                                      
+                                    </div>
+
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/EUfxH-pze7s/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/M185_qYH8vg/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/sesveuG_rNo/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/AvhMzHwiE_0/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/2gYsZUmockw/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/EMSDtjVHdQ8/400x300"
-                                            alt=""/>
-                                    </a>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="Section3" v-if="gallery.tour">
+                                <div class="row">
+                                   <div class="col-lg-3 col-md-4 col-6" v-for="gallery in gallery.tour"
+                                        :key="gallery.id">
+                                        <img :src="
+                                            'http://localhost:8000/images/gallery/' + gallery.image
+                                        " alt="image" class="gallery_image" />                                      
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="Section2">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/pWkk7iiCoDM/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/aob0ukAYfuI/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/EUfxH-pze7s/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/M185_qYH8vg/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/sesveuG_rNo/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/AvhMzHwiE_0/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/2gYsZUmockw/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="Section3">
-                           <div class="row">
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/pWkk7iiCoDM/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/aob0ukAYfuI/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/EUfxH-pze7s/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/M185_qYH8vg/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/sesveuG_rNo/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6">
-                                    <a href="#" class="d-block mb-4 h-100">
-                                        <img
-                                            class="img-fluid img-thumbnail"
-                                            src="https://source.unsplash.com/AvhMzHwiE_0/400x300"
-                                            alt=""/>
-                                    </a>
-                                </div>                               
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -210,10 +63,34 @@
 </template>
 <script>
 export default {
-   name:"Gallery"
+   data() {
+        return {
+            gallery: '',
+        }
+    },
+    mounted() {
+        this.getImage();
+    },
+    methods: {
+        getImage() {
+            this.$axios.$get('/gallery').then((res) => {                
+                this.gallery = res;
+            }).catch((error) => {
+                console.log(error)
+
+            });
+        }
+    }
 }
 </script>
 <style scoped>
+.gallery_image {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
 
 .gallery {
   background: linear-gradient(
@@ -248,7 +125,7 @@ export default {
 
 }
 .tab-content{
-    padding:20px 20px;
+    padding:20px 20px 0px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     border:none;
     border-radius:10px;

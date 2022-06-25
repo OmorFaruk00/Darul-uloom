@@ -5,13 +5,13 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
-                        <span class="counter-value">100</span>
+                        <span class="counter-value">1000</span>
                         <h3>CURRENT STUDENT</h3>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter purple">
-                        <span class="counter-value">50</span>
+                        <span class="counter-value">20</span>
                         <h3>TEACHER</h3>
                     </div>
                 </div>
@@ -23,8 +23,8 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter gray">
-                        <span class="counter-value">200</span>
-                        <h3>TEACHER</h3>
+                        <span class="counter-value">30</span>
+                        <h3>Total Staff</h3>
                     </div>
                 </div>
 
