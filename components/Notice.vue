@@ -6,7 +6,7 @@
         <h2 class="font-weight-bolder  pb-2 notice-header">OUR LATEST NOTICES</h2>
         <div class="notice-body p-3" >
           <div v-for="notice in notices.slice(0,4)" :key="notice.id">
-          <nuxt-link :to="`/notice-detail/${notice.id}`" class="p-2 d-flex">
+          <nuxt-link :to="`/notice-detail/${notice.id}`" class="p-2 d-flex ">
             <h6 class="notice-date">{{notice.published_date}}</h6>
             <h6 class="notice-title">{{notice.title}}</h6>
             </nuxt-link>
@@ -71,6 +71,10 @@ export default{
 }
 </script>
 <style scoped>
+a{
+  text-decoration: none;
+  
+}
 .notice{
   padding: 5% 3%;
   
@@ -92,11 +96,13 @@ export default{
      margin-right: 20px;
      font-weight: 900;
      width: 33% ;
+     color: rgb(74, 70, 70);
  }
  .notice-title{
      padding-top: 10px;
      font-size: 15px;
-     font-weight: 600;     
+     font-weight: 600;   
+     color: rgb(74, 70, 70);  
  }
  .notice-title:hover{
      cursor: pointer;

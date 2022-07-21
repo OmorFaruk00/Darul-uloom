@@ -41,7 +41,7 @@
 </template>
 <style scope>
 .admission-bg{
-    background:#fff;
+    background: #fff;
 }
 .admission {
     background: linear-gradient(to bottom,
@@ -68,8 +68,7 @@
     color: #fff;
 }
 .document ul li{
-    list-style: square;
-    /* list-style-type: "\1F44D"; */
+    list-style: square;   
 
 }
 
@@ -129,6 +128,7 @@
     background: #e5e9ed;
     position: relative;
     transition: all 0.3s ease 0s;
+    color: #7a7e82;
     
 }
 

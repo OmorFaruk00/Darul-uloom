@@ -14,24 +14,24 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'},
-      {rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.png'},
-      {rel: 'apple-touch-icon', sizes: '120x120', href: '/favicon.png'},
-      {rel: 'apple-touch-icon', sizes: '152x152', href: '/favicon.png'},
-      {rel: 'stylesheet', id: 'bootstrap-style', href: '/css/bootstrap.min.css'},
-      {rel: 'stylesheet', href: '/css/icons.min.css'},      
-      // {rel: 'stylesheet', href: '/bootstrap-select/dist/css/bootstrap-select.min.css'},
-      ,
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.png'},      
+      {rel: 'stylesheet', id: 'bootstrap-style', href: '/css/bootstrap.min.css'},      
+      {rel: 'stylesheet', id: 'font-awesome-style', href: '/css/font-awesome.min.css'},
+      {rel: 'stylesheet',  href: '/css/style.css'},
+
+
+      
     ],
 
     script: [
-      {src: '/libs/jquery/jquery.min.js', defer: true},
-      {src: '/libs/bootstrap/js/bootstrap.bundle.min.js', defer: true},     
-      // {src: '/bootstrap-select/dist/js/bootstrap-select.min.js', defer: true},
-      {src: '/libs/metismenu/metisMenu.min.js', defer: true},
-      {src: '/libs/simplebar/simplebar.min.js', defer: true},
-     
-      // {src: '/js/main.js', defer: true},
+      
+      {src: '/js/jquery.min.js', defer: true},  
+      {src: '/js/main.js', defer: true},
+      {src: '/js/bootstrap.min.js', defer: true},
+      {src: '/js/bootstrap.bundle.min.js', defer: true},
+      
+
+      
     ],
   },
 
@@ -45,8 +45,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: 'plugins/owl.js', ssr: false},
+    {src: '~/plugins/owl.js', ssr: false},
     {src: '~/plugins/vue-toaster.js', ssr: false},
+    {src: '~/plugins/fontawesome.js', ssr: false},
+    
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -69,7 +71,7 @@ export default {
    
   },
   axios: {   
-    baseURL: 'http://localhost:8000/api',
+    baseURL: 'https://www.api.darululoom-islamia.org/api',
     credentials: true
   },
 

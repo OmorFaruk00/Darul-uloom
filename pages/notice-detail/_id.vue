@@ -14,7 +14,7 @@
                 <p class="notice-title">{{ notice.title }}</p>
                 <p class="notice-desc">{{ notice.description }}</p>
                 <div>
-                    <img :src="'http://localhost:8000/images/dum/' + notice.files" alt="image" width="100%"
+                    <img :src="base_url+'/images/dum/' + notice.files" alt="image" width="100%"
                         height="auto" />
                 </div>
             </div>
@@ -26,6 +26,7 @@ export default {
     data() {
         return {
             notice: [],
+            base_url: process.env.url,
 
         }
     },
@@ -51,7 +52,7 @@ export default {
 <style scoped>
 .notice h2 {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 50px;
     font-size: 45px;
     color: #fff;
 }

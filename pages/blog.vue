@@ -4,17 +4,17 @@
       <h2 class="title">OUR BLOG LIST</h2>
     </div>
 
-    <div class="container event-page">
+    <div class="container event-page">    
       <div class="row" v-if="blogs">
         <div class="col-md-6 col-lg-4 col-sm-12 mb-5" v-for="blog in blogs" :key="blog.id">
           <div class="blog">            
               <img :src="
-                  'http://localhost:8000/images/dum/' + blog.files
+                  base_url+'/images/dum/' + blog.files
                 " alt="image" class="blog-image"/>
             
             <div class="blog-content">
               <div class="d-flex justify-content-between">
-                <p><span class="far fa-user mr-2"></span>{{ blog.published_by }}</p> <p> {{blog.published_date}}</p>
+                <p><span class="fa fa-user mr-2"></span>{{ blog.published_by }}</p> <p> {{blog.published_date}}</p>
                 </div>
               <h4>{{ blog.title }}</h4>
               <p class="blog-desc">
@@ -41,6 +41,7 @@ export default {
   data() {
     return {
       blogs: '',
+      base_url: process.env.url,
     }
   },
   mounted() {

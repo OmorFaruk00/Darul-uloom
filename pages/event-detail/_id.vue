@@ -14,7 +14,7 @@
            <p class="notice-title">{{evenrt.title}}</p>
            <p class="notice-desc">{{evenrt.description}}</p>
            <div>
-               <img :src="'http://localhost:8000/images/dum/'+evenrt.files" alt="image"  width="100%" height="auto" /> 
+               <img :src="base_url+'/images/dum/'+evenrt.files" alt="image"  width="100%" height="auto" /> 
            </div>          
 
            
@@ -27,6 +27,7 @@ export default{
   data(){
     return{
       evenrt:[],
+      base_url: process.env.url,
       
     }
   },

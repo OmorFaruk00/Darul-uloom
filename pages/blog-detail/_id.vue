@@ -2,13 +2,13 @@
     <div class="container blog-page">
         <div>
             <img :src="
-                'http://localhost:8000/images/dum/' + blog.files
+                base_url+'/images/dum/' + blog.files
             " alt="image" height="450px" width="100%" />
         </div>
         <div class="blog">
             <div class="blog-content">
                 <div class="d-flex justify-content-between">
-                    <p><span class="far fa-user mr-2"></span>{{ blog.published_by }}</p>
+                    <p><span class="fa fa-user mr-2"></span>{{ blog.published_by }}</p>
                     <p> Date: {{ blog.published_date }}</p>
                 </div>
                 <h4>{{ blog.title }}</h4>
@@ -25,6 +25,7 @@ export default {
     data() {
         return {
             blog: '',
+            base_url: process.env.url,
         }
     },
     mounted() {

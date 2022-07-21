@@ -6,11 +6,11 @@
         <carousel v-if="programs" :autoplay="true" :responsive="responsive" :dots="false" :loop="true">
           <slide v-for="program in programs" :key="program.id">
             <div class="card">
-              <img :src="'http://localhost:8000/images/dum/' + program.image" alt="image" class="image" />
+              <img :src="base_url+'/images/dum/' + program.image" alt="image" class="image" />
               <div class="card-body">
                 <h2 class="card-title">{{ program.name }}</h2>
                 <div class="d-flex justify-content-center">
-                  <nuxt-link to="/#" class=" btn-apply">APPLY NOW</nuxt-link>
+                  <nuxt-link to="/admission" class=" btn-apply">Admission Info</nuxt-link>
                 </div>
               </div>
             </div>
@@ -34,6 +34,7 @@ export default {
         1200: { items: 3, nav: true },
       },
       programs: "",
+      base_url: process.env.url,
     };
   },
   mounted() {
@@ -66,7 +67,7 @@ export default {
 .btn-apply {
   color: #fff;
   background: #00a9ef;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;

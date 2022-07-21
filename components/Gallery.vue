@@ -1,6 +1,6 @@
 <template>
     <div class="our-gallery">
-        <div class="container">
+        <div class="container" v-if="gallery">
             <h2 class="title mb-5">Photo Gallery</h2>
             <div class="row">
                 <div class="col-md-12">
@@ -22,10 +22,10 @@
                         <div class="tab-content tabs">
                             <div role="tabpanel" class="tab-pane active" id="Section1" v-if="gallery.academic">
                                 <div class="row">
-                                    <div class="col-lg-3 col-md-4 col-6" v-for="gallery in gallery.academic.slice(0,8)"
+                                    <div class="col-lg-3 col-md-4 col-sm-12" v-for="gallery in gallery.academic.slice(0,8)"
                                         :key="gallery.id">
                                         <img :src="
-                                            'http://localhost:8000/images/gallery/' + gallery.image
+                                            base_url+'/images/gallery/' + gallery.image
                                         " alt="image" class="gallery_image" />                                      
                                     </div>
 
@@ -34,10 +34,10 @@
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="Section2" v-if="gallery.event">
                                 <div class="row">
-                                     <div class="col-lg-3 col-md-4 col-6" v-for="gallery in gallery.event.slice(0,8)"
+                                     <div class="col-lg-3 col-md-4 col-sm-12" v-for="gallery in gallery.event.slice(0,8)"
                                         :key="gallery.id">
                                         <img :src="
-                                            'http://localhost:8000/images/gallery/' + gallery.image
+                                            base_url+'/images/gallery/' + gallery.image
                                         " alt="image" class="gallery_image" />                                      
                                     </div>
 
@@ -45,10 +45,10 @@
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="Section3" v-if="gallery.tour">
                                 <div class="row">
-                                   <div class="col-lg-3 col-md-4 col-6" v-for="gallery in gallery.tour.slice(0,8)"
+                                   <div class="col-lg-3 col-md-4 col-sm-6" v-for="gallery in gallery.tour.slice(0,8)"
                                         :key="gallery.id">
                                         <img :src="
-                                            'http://localhost:8000/images/gallery/' + gallery.image
+                                            base_url+'/images/gallery/' + gallery.image
                                         " alt="image" class="gallery_image" />                                      
                                     </div>
 
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-        </div>       
+        </div>            
     </div>
 </template>
 <script>
@@ -66,6 +66,7 @@ export default {
     data() {
         return {
             gallery: '',
+            base_url: process.env.url,
         }
     },
     mounted() {

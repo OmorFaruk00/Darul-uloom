@@ -8,7 +8,7 @@
             <div class="our-staff">
               <div class="pic">
                 <img :src="
-                  'http://localhost:8000/images/emp/' + staff.profile_photo
+                  base_url+'/images/emp/' + staff.profile_photo
                 " alt="image" class="staff_image"/>
               </div>
               <div class="team-content">
@@ -19,14 +19,10 @@
 
                 <ul class="social" v-if="staff.rel_social">
                   <li v-for="social in staff.rel_social" :key="social._id">
-                    <a :href="social.social_url" v-if="social.social_name == 'Facebook'"><i
-                        class="fab fa-facebook"></i></a>
-                    <a :href="social.social_url" v-if="social.social_name == 'Twitter'"><i
-                        class="fab fa-twitter"></i></a>
-                    <a :href="social.social_url" v-if="social.social_name == 'Instagram'"><i
-                        class="fab fa-instagram"></i></a>
-                    <a :href="social.social_url" v-if="social.social_name == 'LinkedIn'"><i
-                        class="fab fa-linkedin"></i></a>
+                    <a :href="social.social_url" v-if="social.social_name == 'Facebook'"><img src="/images/icon/fb.png" alt=""></a>
+                    <a :href="social.social_url" v-if="social.social_name == 'Twitter'"><img src="/images/icon/twi.png" alt=""></a>
+                    <a :href="social.social_url" v-if="social.social_name == 'Instagram'"><img src="/images/icon/ins.png"  alt=""></a>
+                    <a :href="social.social_url" v-if="social.social_name == 'LinkedIn'"><img src="/images/icon/linkedin.png" alt=""></a>
                   </li>
                 </ul>
 
@@ -52,6 +48,7 @@ export default {
         1200: { items: 3, nav: true },
       },
       staffs: "",
+      base_url: process.env.url,
     };
   },
   mounted() {

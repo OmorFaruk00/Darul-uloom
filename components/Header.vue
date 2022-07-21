@@ -4,7 +4,7 @@
       <client-only>
         <carousel v-if="sliders" :autoplay="true" :responsive="responsive" :dots="false" :loop="true">         
           <slide v-for="slider in sliders" :key="slider.id">
-            <img :src="'http://localhost:8000/images/dum/'+slider.image" alt="image"  class="slider-image" />            
+            <img :src="base_url + '/images/dum/'+slider.image" alt="image"  class="slider-image" />            
             <div class="carousel-caption">
               <div class="container">
                 <div class="content-block">                  
@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       sliders: '',
+      base_url: process.env.url,
       responsive: {
         0: { items: 1, nav: false },
         576: { items: 1, nav: false },

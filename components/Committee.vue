@@ -3,40 +3,11 @@
     <div id="main">
       <div class="container">
         <h2 class="title pb-5">GOVERNING BODIES</h2>
-        <div class="accordion" id="faq">
-
-
+        <div class="accordion" id="faq">        
           <div class="card" v-if="committee.Majlishe_Shura">
             <div class="card-header" id="faqhead4">
               <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
-                aria-expanded="true" aria-controls="faq4">Mojlishe Shura</a>
-            </div>
-
-            <div id="faq4" class="collapse px-3" aria-labelledby="faqhead3" data-parent="#faq">
-              <div class="card-body">
-                <div class="row pb-3">
-                  <div class="col-md-6 col-sm-12 col-xl-4 pb-5" v-for="committee in committee.Majlishe_Shura"
-                    :key="committee.id">
-                    <div class="our-committee">
-                      <div class="pic">
-                        <img :src="'http://localhost:8000/images/dum/' + committee.image" alt="image"
-                          class="committee_img" />
-                      </div>
-                      <div class="content">
-                        <h3 class="">{{ committee.member_name }} ({{ committee.member_type }})</h3>
-                        <!-- <span class="post">{{committee.member_type}}</span> -->
-                        <span class="profession">Profession : {{ committee.profession }}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card" v-if="committee.Majlishe_">
-            <div class="card-header" id="faqhead4">
-              <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
-                aria-expanded="true" aria-controls="faq4">Mojlishe Shura</a>
+                aria-expanded="true" aria-controls="faq4">Mojlishe Shura  <img src="/images/icon/down.png" alt="" class=" float-right text-info" height="18px"></a>
             </div>
 
             <div id="faq4" class="collapse px-3" aria-labelledby="faqhead3" data-parent="#faq">
@@ -46,7 +17,7 @@
                     :key="committee.id">
                     <div class="our-committee">
                       <div class="pic">
-                        <img :src="'http://localhost:8000/images/dum/' + committee.image" alt="image"
+                        <img :src="base_url+'/images/dum/' + committee.image" alt="image"
                           class="committee_img" />
                       </div>
                       <div class="content">
@@ -63,7 +34,7 @@
           <div class="card " v-if="committee.Majlishe_Alema">
             <div class="card-header" id="faqhead5">
               <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
-                aria-expanded="true" aria-controls="faq5">Mojlishe Alema</a>
+                aria-expanded="true" aria-controls="faq5">Mojlishe Alema  <img src="/images/icon/down.png" alt="" class=" float-right" height="18px"></a>
             </div>
 
             <div id="faq5" class="collapse px-3" aria-labelledby="faqhead5" data-parent="#faq">
@@ -73,7 +44,7 @@
                     :key="committee.id">
                     <div class="our-committee">
                       <div class="pic">
-                        <img :src="'http://localhost:8000/images/dum/' + committee.image" alt="image"
+                        <img :src="base_url+'/images/dum/' + committee.image" alt="image"
                           class="committee_img" />
 
                       </div>
@@ -97,6 +68,7 @@ export default {
   data() {
     return {
       committee: "",
+      base_url: process.env.url,
 
     }
   },

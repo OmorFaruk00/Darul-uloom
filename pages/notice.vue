@@ -106,21 +106,22 @@ export default{
   /* background: rgb(238, 233, 233); */
   /* background-image: url("/images/bg3.png"); */
 }
-.notice-date {
-  font-size: 15px;
-  background: rgb(204, 203, 203);
-  padding: 14px;
-  border-radius: 10px;
-  margin-right: 20px;
-  font-weight: 900;
-  width: 35%;
-  
-}
-.notice-title {
-  padding-top: 10px;
-  font-size: 15px;
-  font-weight: 600;
-}
+ .notice-date{
+     font-size: 15px;
+     background: rgb(204, 203, 203);
+     padding: 14px;
+     border-radius: 10px;
+     margin-right: 20px;
+     font-weight: 900;
+     width: 33% ;
+     color: rgb(74, 70, 70);
+ }
+ .notice-title{
+     padding-top: 10px;
+     font-size: 15px;
+     font-weight: 600;   
+     color: rgb(74, 70, 70);  
+ }
 .notice-title:hover {
   cursor: pointer;
   color: rgb(24, 35, 72);

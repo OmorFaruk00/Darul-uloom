@@ -7,7 +7,7 @@
                     <div class="card" v-if="fee.residential">
                         <div class="card-header" id="faqhead1">
                             <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1"
-                                aria-expanded="true" aria-controls="faq1">Residential</a>
+                                aria-expanded="true" aria-controls="faq1">Residential <img src="/images/icon/down.png" alt="" class=" float-right" height="18px"></a>
                         </div>
                         <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
                             <div class="card-body">
@@ -34,7 +34,7 @@
                     <div class="card" v-if="fee.non_residential">
                         <div class="card-header" id="faqhead2">
                             <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
-                                aria-expanded="true" aria-controls="faq2">Non Residential</a>
+                                aria-expanded="true" aria-controls="faq2">Non Residential <img src="/images/icon/down.png" alt="" class=" float-right" height="18px"></a>
                         </div>
 
                         <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
@@ -61,7 +61,8 @@
                     <div class="card" v-if="fee.day_care">
                         <div class="card-header" id="faqhead3">
                             <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
-                                aria-expanded="true" aria-controls="faq3">Day Care</a>
+                                aria-expanded="true" aria-controls="faq3">Day Care <img src="/images/icon/down.png" alt="" class=" float-right" height="18px"></a>
+                                
                         </div>
                         <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
                             <div class="card-body">
@@ -122,6 +123,7 @@ export default {
 };
 </script>
 <style scoped>
+
 .tuition {
     background-color: hsl(60, 22%, 96%);
     padding: 70px;
