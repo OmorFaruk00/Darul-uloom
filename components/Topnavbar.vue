@@ -11,16 +11,17 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-xl-8">
                             <div class="top-title">
-                                <h2>দারুল উলূম মনিরাম</h2>
-                                <h2>دارول أولوم منيرام</h2>
-                                <h2>DARUL ULOOM MONIRAM</h2>
+                                <h2>দারুল উলূম ইসলামিয়া</h2>
+                                <h2>دار العلوم الإسلامية</h2>
+                                <!-- <h2>darul uloom islamia</h2> -->
+                                <h2>Darul Uloom Islamia</h2>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-xl-4 ">
                             <div class="pt-3 top-icon">
-                                <img src="images/phone.png" alt="phone"><span>+8809612607772</span><br />
-                                <img src="images/email.png" alt="email">
-                                <span>info@darululoommoniram.com</span><br />
+                                <img src="/images/phone.png" alt="phone"><span>+8809612607772</span><br />
+                                <img src="/images/email.png" alt="email">
+                                <span>info@darululoomislamia.com</span><br />
 
                                 <div class="d-flex pt-3">
                                     <a class="btn-lang" @click="changeLanguage('ba')">বাংলা</a>
@@ -98,8 +99,8 @@ export default {
 }
 
 .top-logo img {
-    height: 100px;
-    margin-top: 20px;
+    height: 150px;
+    margin-top:5px;
 
 }
 
@@ -148,7 +149,8 @@ export default {
 
 .navbar {
     /* background:rgb(24, 35, 72); */
-    background: #337ab7;
+    /* background: #337ab7; */
+    background: #1F7A40;
 
 }
 
@@ -173,7 +175,7 @@ export default {
 }
 
 .btn-lang {
-    border: 2px solid rgb(24, 35, 72);
+    border: 2px solid #1F7A40;
     margin-right: 10px;
     padding: 0px 10px;
     color: #000;
@@ -182,8 +184,8 @@ export default {
 }
 
 .btn-lang:hover {
-    background: rgb(24, 35, 72);
-    color: #fff;
+    background: #1F7A40;
+    color: #fff !important;
 
 }
 

@@ -14,7 +14,7 @@ ul li{
 }
  .title:after{
     content: '';
-    background-color: #0097e6;
+    background-color: #1F7A40 !important;
     height: 2px;
     width: 60px;
     margin: 3px auto 0;
@@ -30,7 +30,7 @@ ul li{
 }
 .btn-submit{
     color: #fff;
-    background: #00a9ef;
+    background: #1F7A40 !important;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;

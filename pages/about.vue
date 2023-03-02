@@ -61,7 +61,7 @@
     </div>
 
     <!-- our mission -->
-    <Mission />
+    <Mission />   
     <Teaching-staffs />
     <Committee />
   </div>

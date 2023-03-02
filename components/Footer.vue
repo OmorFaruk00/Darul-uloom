@@ -41,7 +41,7 @@
 
                 <div class="cta-text">
                   <h4>Mail us</h4>
-                  <span>info@darululoommoniram.com</span>
+                  <span>info@darululoomislamia.com</span>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@
         <div class="container">
           <div class=" text-center text-lg-center">
             <div class="copyright-text">
-              <p>Copyright &copy; 2018, All Right Reserved <a href="#">Omor Faruk</a></p>
+              <p>Copyright &copy; 2022, All Right Reserved <a href="#">Omor Faruk</a></p>
             </div>
           </div>
         </div>
@@ -143,31 +143,25 @@ ul {
 }
 
 .footer-section {
-  /* background-image: url('/images/footer.jpeg'); */
-
   background: #151515;
   opacity: 0.9;
   position: relative;
 }
-
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
-
 .single-cta svg {
-  color: #ff5e14;
+  color: #1F7A40;
   font-size: 30px;
   float: left;
   margin-top: 8px;
   height: 40px;
 }
-
 .cta-text {
   padding-left: 15px;
   display: inline-block;
 
 }
-
 .cta-text h4 {
   color: #fff;
   font-size: 20px;
@@ -199,7 +193,7 @@ ul {
 }
 
 .footer-logo img {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .footer-text p {
@@ -259,7 +253,7 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: #1F7A40;
 }
 
 .footer-widget ul li {
@@ -270,7 +264,7 @@ ul {
 }
 
 .footer-widget ul li a:hover {
-  color: #ff5e14;
+  color: #1F7A40;
 }
 
 .footer-widget ul li a {
@@ -294,9 +288,9 @@ ul {
 .subscribe-form button {
   position: absolute;
   right: 0;
-  background: #ff5e14;
+  background: #1F7A40;
   padding: 13px 20px;
-  border: 1px solid #ff5e14;
+  border: 1px solid #1F7A40;
   top: 0;
 }
 
@@ -318,7 +312,7 @@ ul {
 }
 
 .copyright-text p a {
-  color: #ff5e14;
+  color: #1F7A40;
 }
 
 .footer-menu li {
@@ -327,7 +321,7 @@ ul {
 }
 
 .footer-menu li:hover a {
-  color: #ff5e14;
+  color: #1F7A40;
 }
 
 .footer-menu li a {

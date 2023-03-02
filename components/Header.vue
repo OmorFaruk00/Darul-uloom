@@ -6,11 +6,11 @@
           <slide v-for="slider in sliders" :key="slider.id">
             <img :src="base_url + '/images/dum/'+slider.image" alt="image"  class="slider-image" />            
             <div class="carousel-caption">
-              <div class="container">
+              <div class="">
                 <div class="content-block">                  
                     <h2>{{slider.title}}</h2>                    
                     <p>{{slider.description}}</p>                  
-                  <a href="#" class="btn-apply">APPLY NOW</a>
+                  <!-- <a href="#" class="btn-apply">APPLY NOW</a> -->
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default {
 .content-block p {
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
    color: #fff;
 } 
 

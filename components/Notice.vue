@@ -13,7 +13,7 @@
           </div>
                 
           <div class="d-flex justify-content-end">
-              <nuxt-link to="/notice" class=" btn-submit">See More</nuxt-link>
+              <nuxt-link to="/notice" class="btn-see-more">See More</nuxt-link>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
           </div>
                 
           <div class="d-flex justify-content-end">
-              <nuxt-link to="/notice" class=" btn-submit">See More</nuxt-link>
+              <nuxt-link to="/notice" class="btn-see-more">See More</nuxt-link>
           </div>
         </div>
       </div>
@@ -94,9 +94,9 @@ a{
      padding: 14px;
      border-radius: 10px;
      margin-right: 20px;
-     font-weight: 900;
+     font-weight: 600;
      width: 33% ;
-     color: rgb(74, 70, 70);
+     color: #1F7A40;
  }
  .notice-title{
      padding-top: 10px;
@@ -106,16 +106,18 @@ a{
  }
  .notice-title:hover{
      cursor: pointer;
-     color: rgb(24, 35, 72);
+     color: #1F7A40;
  }
  .btn-see-more{
-     background: rgb(48, 67, 132);;
-     color: #fff;
-     cursor: pointer;
+    color: #1F7A40;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 18px;
+    margin-bottom: 15px;  
+    cursor: pointer;
  }
  .btn-see-more:hover{
-    background: rgb(24, 35, 72);
-    color: #fff;
+   color: #000;
     cursor: pointer;  
     
 }
@@ -130,7 +132,8 @@ a{
     font-size: 18px;
   }
    .notice-date{
-     font-size: 13px;    
+     font-size: 13px; 
+       
      
    
  }

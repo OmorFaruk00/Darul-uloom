@@ -11,10 +11,10 @@
             </div>
             <h3 class="box-title">Our Campus</h3>
             <div class="description">
-              <h6>Address:  Dhaka-1212. Bangladesh.</h6>
-              <h6>Mobile: 55040891-7</h6>
-              <h6>E-mail: admission@.net.bd</h6>
-              <h6>Website: https://admission.ac</h6>
+              <h6> Dhaka-1212. Bangladesh.</h6>
+              <h6> 55040891-7</h6>
+              <h6> admission@.net.bd</h6>
+              <h6> https://admission.ac</h6>
             </div>            
           </div>
         </div>           
@@ -186,7 +186,7 @@ export default{
   font-weight: 600;
   text-transform: capitalize;
   margin: 0 0 10px;
-  color: #00a7bc;;
+  color: #1F7A40;
   padding-bottom: 20px;
 }
 .description h6{
@@ -205,11 +205,11 @@ export default{
 }
 .contactbox.blue:before,
 .contactbox.blue:after {
-  border-color: #00a7bc;
+  border-color: #1F7A40;
 }
 .contactbox.blue .service-icon,
 .contactbox.blue .service-icon:before {
-  background-color: #00a7bc;
+  background-color: #1F7A40;
 }
 
 .form-container{

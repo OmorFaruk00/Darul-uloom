@@ -110,11 +110,11 @@ export default{
      font-size: 15px;
      background: rgb(204, 203, 203);
      padding: 14px;
-     border-radius: 10px;
+     border-radius: 8px;
      margin-right: 20px;
      font-weight: 900;
      width: 33% ;
-     color: rgb(74, 70, 70);
+     color: #1F7A40;
  }
  .notice-title{
      padding-top: 10px;
@@ -124,7 +124,7 @@ export default{
  }
 .notice-title:hover {
   cursor: pointer;
-  color: rgb(24, 35, 72);
+  color: #1F7A40;
 }
 .btn-see-more {
   background: rgb(48, 67, 132);
@@ -143,5 +143,6 @@ export default{
   .notice{
     margin-bottom: 20px;
   }
+
 }
 </style>

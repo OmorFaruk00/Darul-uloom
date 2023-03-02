@@ -66,7 +66,7 @@ export default {
 
 .btn-apply {
   color: #fff;
-  background: #00a9ef;
+  background: #1F7A40;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;

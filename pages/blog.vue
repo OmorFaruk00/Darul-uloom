@@ -125,7 +125,7 @@ overflow: hidden;
 
 .read-btn {
   font-size: 16px;
-  color: rgb(7, 185, 230);
+  color: #1F7A40;
   padding: 20px 0px;
 }
 

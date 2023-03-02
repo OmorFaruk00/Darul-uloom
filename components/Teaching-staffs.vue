@@ -124,7 +124,7 @@ export default {
 
 .our-staff:hover .pic:before,
 .our-staff:hover .pic:after {
-  border-color: #8475c9;
+  border-color: #1f7a40;
   transform: scale(1);
 }
 
@@ -141,7 +141,7 @@ export default {
 }
 
 .our-staff:hover .team-content {
-  background: #8475c9;
+  background: #1f7a40;
 }
 
 .our-staff .team-content:before {
@@ -159,8 +159,8 @@ export default {
 
 .our-staff:hover .team-content:before {
   width: 100%;
-  background: #8475c9;
-  color: #8475c9;
+  background: #1f7a40;
+  color: #1f7a40;
 }
 
 .our-staff .title {

@@ -71,7 +71,7 @@ export default {
    
   },
   axios: {   
-    baseURL: 'https://www.api.darululoom-islamia.org/api',
+    baseURL: 'https://api.darululoom-islamia.org/api',
     credentials: true
   },
 

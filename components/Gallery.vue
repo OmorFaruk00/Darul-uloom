@@ -76,6 +76,7 @@ export default {
         getImage() {
             this.$axios.$get('/gallery').then((res) => {                
                 this.gallery = res;
+                console.log(res)
             }).catch((error) => {
                 console.log(error)
 
@@ -113,10 +114,10 @@ export default {
 }
 
 ul li .active {
-    color: #0097e6;
+    color: #1F7A40;
     /* text-shadow: 0 0 3px #999; */
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    background: #0097e6;
+    background: #1F7A40;
 }
 
 .btn {
@@ -159,7 +160,7 @@ ul li .active {
 }
 
 .btn:after {
-    background-color: #0097e6;
+    background-color: #1F7A40;
     width: 100%;
     height: 0%;
     top: -10%;
@@ -170,7 +171,7 @@ ul li .active {
 }
 
 .btn:hover:before {
-    background-color: #0097e6;
+    background-color: #1F7A40;
 }
 
 .btn:hover:after {
@@ -179,11 +180,11 @@ ul li .active {
 }
 
 .btn.blue:after {
-    background-color: #0097e6;
+    background-color: #1F7A40;
 }
 
 .btn.blue:hover:before {
-    background-color: #0097e6;
+    background-color: #1F7A40;
 }
 
 @media only screen and (max-width: 767px) {
