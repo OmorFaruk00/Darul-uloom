@@ -8,24 +8,12 @@
       <div class="container">
         <div class="row">
           <div class="intro-img col-md-6 col-sm-12 col-xl-6">
-            <img class="img-responsive" src="images/slider4.jpg" alt="" />
+            <img class="img-responsive about-img" src="images/slider4.jpg" alt="" />
           </div>
           <div class="intro-img col-md-6 col-sm-12 col-xl-6">
-            <h2 class="title">INTRODUCTION</h2>
+            <h2 class="title ">INTRODUCTION</h2>
             <p class="intro-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              libero aliquid, necessitatibus exercitationem tenetur soluta
-              officia alias? Delectus quas dolorem eaque laborum, amet rerum
-              minus perferendis sequi dignissimos eligendi? Omnis eos provident
-              nobis iste sint natus fugit quasi dignissimos, excepturi possimus
-              veritatis aut optio reprehenderit officia est soluta, aliquid
-              blanditiis. Aspernatur impedit pariatur molestiae debitis!
-              Voluptatum quos, neque officia aperiam nesciunt fugiat amet, nihil
-              deserunt minima architecto ipsum? Perferendis quas odit, ratione
-              natus id rem obcaecati nihil, sit ipsam et corporis adipisci
-              architecto est facilis accusantium cumque molestias eos hic quo.
-              Doloribus magnam suscipit, ipsam nisi optio beatae! Incidunt,
-              laborum.
+              DUI - Darul Uloom Islamia is the outcome of a collective dream. The dream was to establish an education institute where education would be imparted to the students to make them successful in this life and the Hereafter. Accordingly, a balanced mix of curriculum combining Islamic subjects (Qawmi) and Scientifics (Combination of Science, Computer & Language) customized syllabus was selected for the institute. The Madrasa's infrastructure development started in 2017. After a minimum development of infrastructure, we started our academic journey in 2022.  We plan to expand the institute by increasing one class each year so that the intakes can build a strong foundation going through the early years’ education program. The location of the institute at Village: Moniram, Post Office: Falgacha, Union: Bamondanga, Police Station: Sundargonj, District: Gaibandha. Moniram is a beautiful Village and our Darul Uloom Islamia is situated not in the village but near the village for a Noise and pollution-free environment. 
             </p>
           </div>
         </div>
@@ -79,6 +67,9 @@
   background-position: bottom;
   margin-bottom: 80px;
 }
+.about-img{
+  height: 100%;
+}
 .about h2 {
   text-align: center;
   padding-top: 60px;
@@ -101,6 +92,7 @@
   font-size: 15px;
   color: #000;
   line-height: 20px;
+  text-align: justify;
 }
 .about-founder {
   padding: 80px;

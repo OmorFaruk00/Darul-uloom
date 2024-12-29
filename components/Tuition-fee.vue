@@ -16,14 +16,16 @@
                                         <tr>                                            
                                             <th>Name of Program</th>                                            
                                             <th>Duration</th>
-                                            <th>Total Fees (BDT)</th>
+                                            <th>Monthly Fee For Male </th>
+                                            <th>Monthly Fee For Female </th>
                                         </tr>
                                     </thead>
                                     <tbody v-for="residential in fee.Residential"  :key="residential.id">
                                         <tr>                                            
                                             <td>{{residential.name_of_program}}</td>                                            
                                             <td>{{residential.duration}}</td>
-                                           <td>{{residential.total_fee}}</td> 
+                                           <td>{{residential.monthly_fee_for_male}}</td> 
+                                           <td>{{residential.monthly_fee_for_female}}</td> 
                                             
                                         </tr>                                        
                                     </tbody>
@@ -44,14 +46,16 @@
                                         <tr>                                            
                                             <th>Name of Program</th>
                                             <th>Duration</th>
-                                            <th>Total Fees (BDT)</th>
+                                            <th>Monthly Fee For Male </th>
+                                            <th>Monthly Fee For Female </th>
                                         </tr>
                                     </thead>
                                       <tbody v-for="non_residential in fee.Non_residential"  :key="non_residential.id">
                                         <tr>                                            
                                             <td>{{non_residential.name_of_program}}</td> 
                                             <td>{{non_residential.duration}} </td>
-                                           <td>{{non_residential.total_fee}}</td>                                            
+                                            <td>{{non_residential.monthly_fee_for_male}}</td> 
+                                            <td>{{non_residential.monthly_fee_for_female}}</td>                                           
                                         </tr>                                        
                                     </tbody>
                                 </table>
@@ -71,14 +75,16 @@
                                         <tr>                                            
                                             <th>Name of Program</th>
                                             <th>Duration</th>
-                                            <th>Total Fees (BDT)</th>
+                                            <th>Monthly Fee For Male </th>
+                                            <th>Monthly Fee For Female </th>
                                         </tr>
                                     </thead>
                                     <tbody v-for="day_care in fee.Day_care"  :key="day_care.id">
                                         <tr>                                            
                                             <td>{{day_care.name_of_program}}</td> 
                                             <td>{{day_care.duration}} </td>
-                                           <td>{{day_care.total_fee}}</td>                                            
+                                            <td>{{day_care.monthly_fee_for_male}}</td> 
+                                            <td>{{day_care.monthly_fee_for_female}}</td>                                          
                                         </tr>                                        
                                     </tbody>
                                 </table>

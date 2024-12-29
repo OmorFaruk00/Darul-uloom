@@ -11,22 +11,14 @@
             </div>
             <h3 class="box-title">Our Campus</h3>
             <div class="description">
-              <h6> Dhaka-1212. Bangladesh.</h6>
-              <h6> 55040891-7</h6>
-              <h6> admission@.net.bd</h6>
-              <h6> https://admission.ac</h6>
+              <h6><i class="fa fa-map"></i>&nbsp; Village: Moniram, PS: Sundargonj,<br><br> Union: Bamandanga - Rangpur Rd, 5721</h6>
+              <h6> <i class="fa fa-phone"></i>&nbsp; +8801896267384</h6>
+              <h6> <i class="fa fa-envelope"></i>&nbsp;info@darululoom-islamia.org</h6>
             </div>            
           </div>
         </div>           
     </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14603.47178525886!2d90.4009235!3d23.7877163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73a5f6509b2106b6!2sDIU%20-%20Dhaka%20International%20University!5e0!3m2!1sen!2sbd!4v1645009193106!5m2!1sen!2sbd"
-      width="100%"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d350439.2743933493!2d89.06495819512853!3d25.565138016723225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x39fd29b9d895a549%3A0x742b249ab3f960d3!2z4Kam4Ka-4Kaw4KeB4KayIOCmieCmsuCnguCmriDgpofgprjgprLgpr7gpq7gpr_gpq_gprzgpr4gRGFydWwgVWxvb20gSXNsYW1pYSDYr9in2LHYp9mE2LnZhNmI2YUg2KfZhNil2LPZhNin2YXZitipLCBWaWxsYWdlOiBNb25pcmFtLCBQUzogU3VuZGFyZ29uaiBVbmlvbjosIEJhbWFuZGFuZ2EgLSBSYW5ncHVyIFJkLCA1NzIx!3m2!1d25.5665738!2d89.4472675!5e0!3m2!1sen!2sbd!4v1735451459124!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
     <section>    

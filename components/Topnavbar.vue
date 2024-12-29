@@ -19,9 +19,9 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-xl-4 ">
                             <div class="pt-3 top-icon">
-                                <img src="/images/phone.png" alt="phone"><span>+8809612607772</span><br />
+                                <img src="/images/phone.png" alt="phone"><span>+8801896267384</span><br />
                                 <img src="/images/email.png" alt="email">
-                                <span>info@darululoomislamia.com</span><br />
+                                <span>info@darululoom-islamia.org</span><br />
 
                                 <div class="d-flex pt-3">
                                     <a class="btn-lang" @click="changeLanguage('ba')">বাংলা</a>
@@ -59,6 +59,14 @@
                         </li>
                         <li class="nav-item">
                             <NuxtLink class="nav-link" to="/admission">ADMISSION</NuxtLink>
+
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/man-power">MAN POWER</NuxtLink>
+
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink class="nav-link" to="/student-profile">STUDENTS PROFILE</NuxtLink>
 
                         </li>
                         <li class="nav-item">
@@ -125,7 +133,7 @@ export default {
 }
 
 .nav-link {
-    font-size: 18px;
+    font-size: 14px;
     color: #fff !important;
     margin-right: 20px;
 

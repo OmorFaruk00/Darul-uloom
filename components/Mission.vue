@@ -2,21 +2,10 @@
     <div>
       <div class="mission">
         <div class="container">
-          <div class="col-6 float-right mt-5">
+          <div class="col-lg-6 col-md-6 col-sm-12 float-right mt-5">
           <h2 class="title my-4 text-white">Our Mission</h2>
           <p class="text-justify text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
-                vitae deleniti ex? Vero omnis ea, debitis magni quam tempora
-                temporibus voluptatum modi harum voluptatibus recusandae
-                voluptatem vel. Culpa adipisci in cupiditate, libero sint,
-                rerum, minus sunt officiis dicta odio velit expedita vero enim
-                id nisi molestiae ut neque cumque quas!minus sunt officiis dicta
-                odio velit expedita vero enim id nisi molestiae ut neque cumque              
-                voluptatem vel. Culpa adipisci in cupiditate, libero sint,
-                rerum, minus sunt officiis dicta odio velit expedita vero enim
-                id nisi molestiae ut neque cumque quas!minus sunt officiis dicta
-                odio velit expedita vero enim id nisi molestiae ut neque cumque
-                quas!
+            The mission of DUI—Darul Uloom Islamia is to educate students to be ideal, active practitioners of Islam who will serve humanity and be successful in this life and the life to come. DUI—Darul Uloom Islamia will lead the "Gajatul Hind" for humanbing as well as islam. 
               </p>
         </div>
         </div>  
@@ -32,8 +21,27 @@
       ),
       url("/images/mission.jpg");
     background-size: cover;
-    height: 500px !important;  
+    height: 300px !important;  
    
   }
+  @media (max-width: 768px) {
+  .mission {
+    height: auto; 
+    padding-bottom: 20px;
+  }
+
+  .text-container {
+    margin-top: 0;
+    text-align: center; 
+  }
+
+  h2.title {
+    font-size: 1.8rem; 
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
   
   </style>

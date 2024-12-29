@@ -4,7 +4,7 @@
       <div class="container">
         <div class="footer-cta pt-5 pb-5">
           <div class="row">
-            <div class="col-xl-4 col-md-4 mb-30">
+            <div class="col-xl-4 col-md-5 mb-30">
               <div class="single-cta">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2">
@@ -14,11 +14,12 @@
                 </svg>
                 <div class="cta-text">
                   <h4>Find us</h4>
-                  <span>1010 Avenue, sw 54321</span>
+                  <span>Village: Moniram, PS: Sundargonj, </span><br>
+                  <span>Union:Bamandanga - Rangpur Rd, 5721</span>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-md-4 ">
+            <div class="col-xl-4 col-md-3 ">
               <div class="single-cta">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" stroke-width="2">
@@ -27,7 +28,7 @@
                 </svg>
                 <div class="cta-text">
                   <h4>Call us</h4>
-                  <span>+8809612607772</span>
+                  <span>+8801896267384</span>
                 </div>
               </div>
             </div>
@@ -41,7 +42,7 @@
 
                 <div class="cta-text">
                   <h4>Mail us</h4>
-                  <span>info@darululoomislamia.com</span>
+                  <span>info@darululoom-islamia.org</span>
                 </div>
               </div>
             </div>
@@ -52,19 +53,18 @@
             <div class="col-xl-4 col-lg-4 mb-50">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                  <a href="index.html"><img src="/images/logo.png" class="img-fluid" alt="logo"></a>
                 </div>
                 <div class="footer-text">
-                  <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut
-                    consec tetur adipisicing
-                    elit,Lorem ipsum dolor sit amet.</p>
+                  <p>DUI - Darul Uloom Islamia is not just a traditional madrasa, but a complete Islamic way of life. InshaAllah, it is our responsibility to build a better life for your child.</p>
                 </div>
-                <div class="footer-social-icon">
+                <div class="footer-social-icon mb-3">
                   <span>Follow us</span>                  
-                  <a href="#"><img src="/images/icon/fb.png"  alt="" height="30px"></a>
-                  <a href="#"><img src="/images/icon/twi.png"  alt="" height="30px"></a>
-                  <a href="#"><img src="/images/icon/ins.png"  alt="" height="30px"></a>
-                  <a href="#"><img src="/images/icon/whatsapp.png"  alt="" height="30px"></a>
+                  <a href="https://www.facebook.com/IslamiaDarulUloom" target="_blank"><img src="/images/icon/fb.png"  alt="" height="30px"></a>
+                  <a href="#" target="_blank"><img src="/images/icon/twi.png"  alt="" height="30px"></a>
+                  <a href="https://www.instagram.com/islamiadarululoom" target="_blank"><img src="/images/icon/ins.png"  alt="" height="30px"></a>
+                  <a href="https://wa.me/8801896267384" target="_blank"><img src="/images/icon/whatsapp.png"  alt="" height="30px"></a>
+                  <a href="https://x.com/DarulUloomISLA" target="_blank"><img src="/images/icon/x.png"  alt="" height="30px"></a>
                  
                 </div>
               </div>
@@ -127,7 +127,7 @@
         <div class="container">
           <div class=" text-center text-lg-center">
             <div class="copyright-text">
-              <p>Copyright &copy; 2022, All Right Reserved <a href="#">Omor Faruk</a></p>
+              <p>Copyright &copy; <span v-text="currentYear"></span>, All Right Reserved <a href="#">Darul Uloom Islamia</a></p>
             </div>
           </div>
         </div>
@@ -136,6 +136,18 @@
 
   </div>
 </template>
+<script>
+export default {
+ 
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    };
+  },
+
+
+};
+</script>
 <style scoped>
 ul {
   margin: 0px;
@@ -189,11 +201,12 @@ ul {
 }
 
 .footer-logo {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .footer-logo img {
   max-width: 150px;
+  margin-top: -40px;
 }
 
 .footer-text p {
