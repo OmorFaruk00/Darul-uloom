@@ -61,7 +61,6 @@
                 <div class="footer-social-icon mb-3">
                   <span>Follow us</span>                  
                   <a href="https://www.facebook.com/IslamiaDarulUloom" target="_blank"><img src="/images/icon/fb.png"  alt="" height="30px"></a>
-                  <a href="#" target="_blank"><img src="/images/icon/twi.png"  alt="" height="30px"></a>
                   <a href="https://www.instagram.com/islamiadarululoom" target="_blank"><img src="/images/icon/ins.png"  alt="" height="30px"></a>
                   <a href="https://wa.me/8801896267384" target="_blank"><img src="/images/icon/whatsapp.png"  alt="" height="30px"></a>
                   <a href="https://x.com/DarulUloomISLA" target="_blank"><img src="/images/icon/x.png"  alt="" height="30px"></a>

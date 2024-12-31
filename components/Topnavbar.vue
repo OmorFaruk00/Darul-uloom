@@ -24,9 +24,10 @@
                                 <span>info@darululoom-islamia.org</span><br />
 
                                 <div class="d-flex pt-3">
-                                    <a class="btn-lang" @click="changeLanguage('ba')">বাংলা</a>
-                                    <a class="btn-lang" @click="changeLanguage('en')">English</a>
-                                    <a class="btn-lang" @click="changeLanguage('ar')">عربي</a>
+                               
+                                    <button class="btn-lang" @click="setLanguage('bn')">Bangla</button>
+                                    <button class="btn-lang"  @click="setLanguage('en')">English</button>
+                                    <button class="btn-lang" @click="setLanguage('ar')">عربي</button>
 
                                 </div>
                             </div>
@@ -85,19 +86,71 @@
 </template>
 <script>
 export default {
-    data() {
-        // const lang = localStorage.getItem('lang') || 'en';
-        return {
-            lang: 'en',
-        }
+  data() {
+    return {
+      currentLanguage: "en", // Default language
+    };
+  },
+  mounted() {
+    this.initGoogleTranslate();
+  },
+  methods: {
+    initGoogleTranslate() {
+      window.googleTranslateElementInit = () => {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en", // Set the default page language
+            includedLanguages: "en,bn,ar", // Allowed languages
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      };
+
+      // Load the Google Translate script
+      const script = document.createElement("script");
+      script.src =
+        "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
     },
-    methods: {
-        changeLanguage(lang) {
-            localStorage.setItem('lang', lang);
-            window.location.reload();
-        }
-    }
+
+   
+
+    reloadGoogleTranslate() {
+      // Clear the existing widget
+      const container = document.getElementById("google_translate_element");
+      container.innerHTML = "";
+
+      // Re-initialize Google Translate
+      this.initGoogleTranslate();
+    },
+
+
+
+
+setLanguage(languageCode) {
+  const hashValue = `#googtrans(${languageCode === 'en' ? 'en|en' : `en|${languageCode}`})`;
+  window.location.hash = hashValue;
+
+  // Clear the Google Translate cookies to reset the state
+  document.cookie = `googtrans=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/`;
+  document.cookie = `googtrans=;expires=Thu, 01 Jan 1970 00:00:00 UTC;domain=.${window.location.hostname};path=/`;
+
+  // Set the new language in the cookie
+  if (languageCode !== 'en') {
+    const cookieValue = `/en/${languageCode}`;
+    document.cookie = `googtrans=${cookieValue};path=/`;
+    document.cookie = `googtrans=${cookieValue};domain=.${window.location.hostname};path=/`;
+  }
+
+  // Reload the page to apply the selected language
+  window.location.reload();
 }
+
+  },
+};
 </script>
 <style scope>
 .top-icon img {

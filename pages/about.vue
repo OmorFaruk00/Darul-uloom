@@ -8,7 +8,7 @@
       <div class="container">
         <div class="row">
           <div class="intro-img col-md-6 col-sm-12 col-xl-6">
-            <img class="img-responsive about-img" src="images/slider4.jpg" alt="" />
+            <img class="img-responsive about-img" src="/images/slider4.jpg" alt="" />
           </div>
           <div class="intro-img col-md-6 col-sm-12 col-xl-6">
             <h2 class="title ">INTRODUCTION</h2>
@@ -42,7 +42,7 @@
             </p>
           </div>
           <div class="intro-img col-md-6 col-sm-12 col-xl-6">
-            <img class="img-responsive" src="images/slider2.jpg" alt="" />
+            <img class="img-responsive" src="/images/slider2.jpg" alt="" />
           </div>
         </div>
       </div>

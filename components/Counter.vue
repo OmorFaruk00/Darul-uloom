@@ -6,25 +6,25 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
                         <span class="counter-value" v-text="counter.sum_of_active_students"></span>
-                        <h3>SUM OF ACTIVE STUDENT</h3>
+                        <h3>CURRENT STUDENT</h3>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter purple">
                         <span class="counter-value" v-text="counter.teacher"></span>
-                        <h3>SUM OF TEACHER</h3>
+                        <h3>TEACHER</h3>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter red">
                         <span class="counter-value" v-text="counter.sum_of_not_active_students"></span>
-                        <h3>SUM OF NOT ACTIVE STUDENT</h3>
+                        <h3>NUMBER OF ALUMNI</h3>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter gray">
                         <span class="counter-value" v-text="counter.staff"></span>
-                        <h3>SUM OF OFFICIALS</h3>
+                        <h3>TOTAL STAFF</h3>
                     </div>
                 </div>
 
