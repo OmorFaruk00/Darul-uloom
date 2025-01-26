@@ -11,7 +11,7 @@
             </div>
             <h3 class="box-title">Our Campus</h3>
             <div class="description">
-              <h6><i class="fa fa-map"></i>&nbsp; Village: Moniram, PS: Sundargonj,<br><br> Union: Bamandanga - Rangpur Rd, 5721</h6>
+              <h6><i class="fa fa-map"></i>&nbsp; Village: Moniram, PS: Sundargonj,<br><br> Union: Bamandanga, Gaibandha-5721</h6>
               <h6> <i class="fa fa-phone"></i>&nbsp; +8801896267384</h6>
               <h6> <i class="fa fa-envelope"></i>&nbsp;info@darululoom-islamia.org</h6>
             </div>            

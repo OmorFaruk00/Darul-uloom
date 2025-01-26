@@ -6,9 +6,10 @@
         <carousel v-if="programs" :autoplay="true" :responsive="responsive" :dots="false" :loop="true">
           <slide v-for="program in programs" :key="program.id">
             <div class="card">
-              <img :src="base_url+'/images/dum/' + program.image" alt="image" class="image" />
+              <img v-if="program.image" :src="base_url+'/images/dum/' + program.image" alt="image" class="image" />
+              <img v-else src="https://www.epoch88.com/wp-content/uploads/2022/09/e0601011.jpg" alt="">
               <div class="card-body">
-                <h2 class="card-title">{{ program.name }}</h2>
+                <h2 class="card-title">{{ program.department_name }}</h2>
                 <div class="d-flex justify-content-center">
                   <nuxt-link to="/admission" class=" btn-apply">Admission Info</nuxt-link>
                 </div>

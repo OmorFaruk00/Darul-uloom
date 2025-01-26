@@ -14,8 +14,8 @@
                 </svg>
                 <div class="cta-text">
                   <h4>Find us</h4>
-                  <span>Village: Moniram, PS: Sundargonj, </span><br>
-                  <span>Union:Bamandanga - Rangpur Rd, 5721</span>
+                  <span>Village: Moniram, PS: Sundargonj,</span><br>
+                  <span>Union: Bamandanga, Gaibandha-5721</span>
                 </div>
               </div>
             </div>
